@@ -1,0 +1,25 @@
+<form>
+  <input type="text" name="lineQ" placeholder="search by single tag">
+  <input type="text" name="tagQ" placeholder="search by text in snippet">
+  <input type="text" name="textQ" placeholder="search by number of lines">
+  <input type="submit" value="Search">
+</form>
+
+<h2>My Snippets</h2>
+
+{{#each snippets}}
+    <div class="snippet">
+        <p>
+            <b>{{ name }}</b> | lines of code: {{ lines }}
+        </p>
+        <div class="code">
+            <pre>{{code}}</pre>
+        </div>
+        <ul class="tags-list clearfix">
+            <li class="tag-label">Tags:</li>
+            {{#each tags}}
+                <li class="tag-item">{{ this }}</li>
+            {{/each}}
+        </ul>
+    </div>
+{{/each}}

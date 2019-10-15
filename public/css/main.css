@@ -1,1 +1,57 @@
 /* main.css */
+#logo {
+    width: 50px;
+    height: 50px;
+}
+h1 {
+    font-size: 50px;
+    color:#494949;
+}
+h2 {
+    font-size: 35px;
+    color:#494949;
+}
+a{
+    border: 1px solid #494949;
+    padding: 3px 7px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.snippet {
+    padding-top: 15px;
+}
+
+.code {
+    background-color: #494949;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.tags-list {
+    padding-left: 0;
+}
+
+.tags-list li {
+    list-style-type: none;
+    float: left;
+    margin-right: 10px;
+}
+
+.tag-label {
+    padding-top: 5px;
+}
+
+.tag-item {
+    border: 2px solid #494949;
+    border-radius: 5px;
+    padding: 3px 6px;
+}
+
