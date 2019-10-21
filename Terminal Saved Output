@@ -1,0 +1,2781 @@
+Last login: Wed Oct 16 20:56:01 on ttys000
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+(base) Juniperui-MacBook-Pro:~ junipersohn$ brew services start mongodb-community
+Service `mongodb-community` already started, use `brew services restart mongodb-community` to restart.
+(base) Juniperui-MacBook-Pro:~ junipersohn$ mongo
+MongoDB shell version v4.2.0
+connecting to: mongodb://127.0.0.1:27017/?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("ea6c5222-3629-4f6e-9748-9f785085d963") }
+MongoDB server version: 4.2.0
+Server has startup warnings: 
+2019-10-16T21:59:37.130-0400 I  CONTROL  [initandlisten] 
+2019-10-16T21:59:37.130-0400 I  CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2019-10-16T21:59:37.130-0400 I  CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2019-10-16T21:59:37.130-0400 I  CONTROL  [initandlisten] 
+---
+Enable MongoDB's free cloud-based monitoring service, which will then receive and display
+metrics about your deployment (disk utilization, CPU, operation statistics, etc).
+
+The monitoring data will be available on a MongoDB website with a unique URL accessible to you
+and anyone you share the URL with. MongoDB may use this information to make product
+improvements and to suggest MongoDB products and deployment options to you.
+
+To enable free monitoring, run the following command: db.enableFreeMonitoring()
+To permanently disable this reminder, run the following command: db.disableFreeMonitoring()
+---
+
+> ^C
+bye
+(base) Juniperui-MacBook-Pro:~ junipersohn$ 
+(base) Juniperui-MacBook-Pro:~ junipersohn$ node app.js
+internal/modules/cjs/loader.js:638
+    throw err;
+    ^
+
+Error: Cannot find module '/Users/junipersohn/app.js'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+(base) Juniperui-MacBook-Pro:~ junipersohn$ cd /Users/junipersohn/AIT/Juniperrr-homework05/src 
+(base) Juniperui-MacBook-Pro:src junipersohn$ node app.js
+server started!
+(node:44975) UnhandledPromiseRejectionWarning: MongoError: Authentication failed.
+    at Function._getError (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/mongodb/lib/core/auth/scram.js:125:14)
+    at sendAuthCommand (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/mongodb/lib/core/auth/scram.js:175:31)
+    at Connection.messageHandler (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/mongodb/lib/core/connection/connect.js:334:5)
+    at Connection.emit (events.js:198:13)
+    at processMessage (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/mongodb/lib/core/connection/connection.js:364:10)
+    at Socket.<anonymous> (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/mongodb/lib/core/connection/connection.js:533:15)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+(node:44975) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 1)
+(node:44975) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+^C
+(base) Juniperui-MacBook-Pro:src junipersohn$ NODE_ENV=PRODUCTION node app.js
+server started!
+Warning: no saslprep library specified. Passwords will not be sanitized
+req.query {}
+filtered []
+req.query {}
+filtered []
+req.query {}
+filtered []
+req.query {}
+filtered []
+req.query { tagQ: '', textQ: '', lineQ: '' }
+filtered []
+^C
+(base) Juniperui-MacBook-Pro:src junipersohn$ NODE_ENV=PRODUCTION node app.js
+connecting to mongoose mongodb://student:secret@localhost:27017/hw05
+server started!
+Warning: no saslprep library specified. Passwords will not be sanitized
+req.query { tagQ: '', textQ: '', lineQ: '' }
+filtered []
+^C
+(base) Juniperui-MacBook-Pro:src junipersohn$ NODE_ENV=PRODUCTION node app.js
+connecting to mongoose mongodb://student:secret@localhost:27017/hw05
+server started!
+Warning: no saslprep library specified. Passwords will not be sanitized
+req.query {}
+filtered []
+req.query {}
+filtered []
+^C
+(base) Juniperui-MacBook-Pro:src junipersohn$ NODE_ENV=PRODUCTION node app.js
+connecting to mongoose mongodb://student:secret@localhost:27017/hw05
+server started!
+Warning: no saslprep library specified. Passwords will not be sanitized
+req.query {}
+req.query {}
+filtered []
+^C
+(base) Juniperui-MacBook-Pro:src junipersohn$ NODE_ENV=PRODUCTION node app.js
+connecting to mongoose mongodb://student:secret@localhost:27017/hw05
+server started!
+Warning: no saslprep library specified. Passwords will not be sanitized
+req.query {}
+req.query {}
+filtered [ { _id: 5da698469d8f6e18cbe4dff5,
+    courseNumber: 'CSCI-UA.0101',
+    courseName: 'Intro to CS',
+    semester: 'Fall',
+    year: 2015,
+    professor: 'McTeacherson',
+    review: 'Now I can sort like pro!' },
+  { _id: 5da6ab1e9d8f6e18cbe4dff6,
+    courseNumber: 'CSCI-UA.0480',
+    courseName: 'AIT',
+    semester: 'Spring',
+    year: 2018,
+    professor: 'Versoza',
+    review: 'The answer is always undefined' },
+  { _id: 5da6ab809d8f6e18cbe4dff7,
+    courseNumber: 'CSCI-UA.0002',
+    courseName: 'Intro To Computer Programming',
+    semester: 'Fall',
+    year: 2018,
+    professor: 'Foobarbaz',
+    review: 'OMG you have to take this course' } ]
+req.query {}
+req.query {}
+filtered [ { _id: 5da698469d8f6e18cbe4dff5,
+    courseNumber: 'CSCI-UA.0101',
+    courseName: 'Intro to CS',
+    semester: 'Fall',
+    year: 2015,
+    professor: 'McTeacherson',
+    review: 'Now I can sort like pro!' },
+  { _id: 5da6ab1e9d8f6e18cbe4dff6,
+    courseNumber: 'CSCI-UA.0480',
+    courseName: 'AIT',
+    semester: 'Spring',
+    year: 2018,
+    professor: 'Versoza',
+    review: 'The answer is always undefined' },
+  { _id: 5da6ab809d8f6e18cbe4dff7,
+    courseNumber: 'CSCI-UA.0002',
+    courseName: 'Intro To Computer Programming',
+    semester: 'Fall',
+    year: 2018,
+    professor: 'Foobarbaz',
+    review: 'OMG you have to take this course' } ]
+^C
+(base) Juniperui-MacBook-Pro:src junipersohn$ NODE_ENV=PRODUCTION node app.js
+connecting to mongoose mongodb://student:secret@localhost:27017/hw05
+server started!
+Warning: no saslprep library specified. Passwords will not be sanitized
+req.query {}
+filtered [ { _id: 5da698469d8f6e18cbe4dff5,
+    courseNumber: 'CSCI-UA.0101',
+    courseName: 'Intro to CS',
+    semester: 'Fall',
+    year: 2015,
+    professor: 'McTeacherson',
+    review: 'Now I can sort like pro!' },
+  { _id: 5da6ab1e9d8f6e18cbe4dff6,
+    courseNumber: 'CSCI-UA.0480',
+    courseName: 'AIT',
+    semester: 'Spring',
+    year: 2018,
+    professor: 'Versoza',
+    review: 'The answer is always undefined' },
+  { _id: 5da6ab809d8f6e18cbe4dff7,
+    courseNumber: 'CSCI-UA.0002',
+    courseName: 'Intro To Computer Programming',
+    semester: 'Fall',
+    year: 2018,
+    professor: 'Foobarbaz',
+    review: 'OMG you have to take this course' } ]
+req.query {}
+filtered [ { _id: 5da698469d8f6e18cbe4dff5,
+    courseNumber: 'CSCI-UA.0101',
+    courseName: 'Intro to CS',
+    semester: 'Fall',
+    year: 2015,
+    professor: 'McTeacherson',
+    review: 'Now I can sort like pro!' },
+  { _id: 5da6ab1e9d8f6e18cbe4dff6,
+    courseNumber: 'CSCI-UA.0480',
+    courseName: 'AIT',
+    semester: 'Spring',
+    year: 2018,
+    professor: 'Versoza',
+    review: 'The answer is always undefined' },
+  { _id: 5da6ab809d8f6e18cbe4dff7,
+    courseNumber: 'CSCI-UA.0002',
+    courseName: 'Intro To Computer Programming',
+    semester: 'Fall',
+    year: 2018,
+    professor: 'Foobarbaz',
+    review: 'OMG you have to take this course' } ]
+req.query { tagQ: '', textQ: '2019', lineQ: '' }
+filtered [ { _id: 5da698469d8f6e18cbe4dff5,
+    courseNumber: 'CSCI-UA.0101',
+    courseName: 'Intro to CS',
+    semester: 'Fall',
+    year: 2015,
+    professor: 'McTeacherson',
+    review: 'Now I can sort like pro!' },
+  { _id: 5da6ab1e9d8f6e18cbe4dff6,
+    courseNumber: 'CSCI-UA.0480',
+    courseName: 'AIT',
+    semester: 'Spring',
+    year: 2018,
+    professor: 'Versoza',
+    review: 'The answer is always undefined' },
+  { _id: 5da6ab809d8f6e18cbe4dff7,
+    courseNumber: 'CSCI-UA.0002',
+    courseName: 'Intro To Computer Programming',
+    semester: 'Fall',
+    year: 2018,
+    professor: 'Foobarbaz',
+    review: 'OMG you have to take this course' } ]
+req.query { tagQ: '', textQ: '2018', lineQ: '' }
+filtered [ { _id: 5da698469d8f6e18cbe4dff5,
+    courseNumber: 'CSCI-UA.0101',
+    courseName: 'Intro to CS',
+    semester: 'Fall',
+    year: 2015,
+    professor: 'McTeacherson',
+    review: 'Now I can sort like pro!' },
+  { _id: 5da6ab1e9d8f6e18cbe4dff6,
+    courseNumber: 'CSCI-UA.0480',
+    courseName: 'AIT',
+    semester: 'Spring',
+    year: 2018,
+    professor: 'Versoza',
+    review: 'The answer is always undefined' },
+  { _id: 5da6ab809d8f6e18cbe4dff7,
+    courseNumber: 'CSCI-UA.0002',
+    courseName: 'Intro To Computer Programming',
+    semester: 'Fall',
+    year: 2018,
+    professor: 'Foobarbaz',
+    review: 'OMG you have to take this course' } ]
+req.query { tagQ: '', textQ: '', lineQ: '' }
+filtered [ { _id: 5da698469d8f6e18cbe4dff5,
+    courseNumber: 'CSCI-UA.0101',
+    courseName: 'Intro to CS',
+    semester: 'Fall',
+    year: 2015,
+    professor: 'McTeacherson',
+    review: 'Now I can sort like pro!' },
+  { _id: 5da6ab1e9d8f6e18cbe4dff6,
+    courseNumber: 'CSCI-UA.0480',
+    courseName: 'AIT',
+    semester: 'Spring',
+    year: 2018,
+    professor: 'Versoza',
+    review: 'The answer is always undefined' },
+  { _id: 5da6ab809d8f6e18cbe4dff7,
+    courseNumber: 'CSCI-UA.0002',
+    courseName: 'Intro To Computer Programming',
+    semester: 'Fall',
+    year: 2018,
+    professor: 'Foobarbaz',
+    review: 'OMG you have to take this course' } ]
+^C
+(base) Juniperui-MacBook-Pro:src junipersohn$ NODE_ENV=PRODUCTION node app.js
+connecting to mongoose mongodb://student:secret@localhost:27017/hw05
+server started!
+Warning: no saslprep library specified. Passwords will not be sanitized
+req.query { tagQ: '', textQ: '', lineQ: '' }
+filtered [ { _id: 5da698469d8f6e18cbe4dff5,
+    courseNumber: 'CSCI-UA.0101',
+    courseName: 'Intro to CS',
+    semester: 'Fall',
+    year: 2015,
+    professor: 'McTeacherson',
+    review: 'Now I can sort like pro!' },
+  { _id: 5da6ab1e9d8f6e18cbe4dff6,
+    courseNumber: 'CSCI-UA.0480',
+    courseName: 'AIT',
+    semester: 'Spring',
+    year: 2018,
+    professor: 'Versoza',
+    review: 'The answer is always undefined' },
+  { _id: 5da6ab809d8f6e18cbe4dff7,
+    courseNumber: 'CSCI-UA.0002',
+    courseName: 'Intro To Computer Programming',
+    semester: 'Fall',
+    year: 2018,
+    professor: 'Foobarbaz',
+    review: 'OMG you have to take this course' } ]
+req.query { semesterQ: '', yearQ: '2018', professorQ: '' }
+filtered [ { _id: 5da698469d8f6e18cbe4dff5,
+    courseNumber: 'CSCI-UA.0101',
+    courseName: 'Intro to CS',
+    semester: 'Fall',
+    year: 2015,
+    professor: 'McTeacherson',
+    review: 'Now I can sort like pro!' },
+  { _id: 5da6ab1e9d8f6e18cbe4dff6,
+    courseNumber: 'CSCI-UA.0480',
+    courseName: 'AIT',
+    semester: 'Spring',
+    year: 2018,
+    professor: 'Versoza',
+    review: 'The answer is always undefined' },
+  { _id: 5da6ab809d8f6e18cbe4dff7,
+    courseNumber: 'CSCI-UA.0002',
+    courseName: 'Intro To Computer Programming',
+    semester: 'Fall',
+    year: 2018,
+    professor: 'Foobarbaz',
+    review: 'OMG you have to take this course' } ]
+^C
+(base) Juniperui-MacBook-Pro:src junipersohn$ NODE_ENV=PRODUCTION node app.js
+connecting to mongoose mongodb://student:secret@localhost:27017/hw05
+server started!
+Warning: no saslprep library specified. Passwords will not be sanitized
+req.query { semesterQ: '', yearQ: '2018', professorQ: '' }
+filtered []
+req.query { semesterQ: '', yearQ: '2018', professorQ: '' }
+filtered []
+req.query { semesterQ: '', yearQ: '2018', professorQ: '' }
+filtered []
+req.query { semesterQ: '', yearQ: '2018', professorQ: '' }
+filtered []
+req.query { semesterQ: '', yearQ: '', professorQ: '' }
+filtered []
+^C
+(base) Juniperui-MacBook-Pro:src junipersohn$ NODE_ENV=PRODUCTION node app.js
+connecting to mongoose mongodb://student:secret@localhost:27017/hw05
+server started!
+Warning: no saslprep library specified. Passwords will not be sanitized
+req.query { semesterQ: '', yearQ: '', professorQ: '' }
+filtered []
+req.query { semesterQ: '', yearQ: '2018', professorQ: '' }
+filtered []
+req.query { semesterQ: '', yearQ: '2018', professorQ: '' }
+filtered []
+req.query { semesterQ: '', yearQ: '2018', professorQ: '' }
+filtered []
+req.query {}
+filtered [ { _id: 5da698469d8f6e18cbe4dff5,
+    courseNumber: 'CSCI-UA.0101',
+    courseName: 'Intro to CS',
+    semester: 'Fall',
+    year: 2015,
+    professor: 'McTeacherson',
+    review: 'Now I can sort like pro!' },
+  { _id: 5da6ab1e9d8f6e18cbe4dff6,
+    courseNumber: 'CSCI-UA.0480',
+    courseName: 'AIT',
+    semester: 'Spring',
+    year: 2018,
+    professor: 'Versoza',
+    review: 'The answer is always undefined' },
+  { _id: 5da6ab809d8f6e18cbe4dff7,
+    courseNumber: 'CSCI-UA.0002',
+    courseName: 'Intro To Computer Programming',
+    semester: 'Fall',
+    year: 2018,
+    professor: 'Foobarbaz',
+    review: 'OMG you have to take this course' } ]
+req.query { semesterQ: '', yearQ: '2018', professorQ: '' }
+filtered []
+req.query { semesterQ: '', yearQ: '2018', professorQ: '' }
+filtered []
+req.query {}
+filtered [ { _id: 5da698469d8f6e18cbe4dff5,
+    courseNumber: 'CSCI-UA.0101',
+    courseName: 'Intro to CS',
+    semester: 'Fall',
+    year: 2015,
+    professor: 'McTeacherson',
+    review: 'Now I can sort like pro!' },
+  { _id: 5da6ab1e9d8f6e18cbe4dff6,
+    courseNumber: 'CSCI-UA.0480',
+    courseName: 'AIT',
+    semester: 'Spring',
+    year: 2018,
+    professor: 'Versoza',
+    review: 'The answer is always undefined' },
+  { _id: 5da6ab809d8f6e18cbe4dff7,
+    courseNumber: 'CSCI-UA.0002',
+    courseName: 'Intro To Computer Programming',
+    semester: 'Fall',
+    year: 2018,
+    professor: 'Foobarbaz',
+    review: 'OMG you have to take this course' } ]
+req.query {}
+app.post/ req.body { semesterQ: '', yearQ: '2018', professorQ: '' }
+req.query {}
+filtered [ { _id: 5da698469d8f6e18cbe4dff5,
+    courseNumber: 'CSCI-UA.0101',
+    courseName: 'Intro to CS',
+    semester: 'Fall',
+    year: 2015,
+    professor: 'McTeacherson',
+    review: 'Now I can sort like pro!' },
+  { _id: 5da6ab1e9d8f6e18cbe4dff6,
+    courseNumber: 'CSCI-UA.0480',
+    courseName: 'AIT',
+    semester: 'Spring',
+    year: 2018,
+    professor: 'Versoza',
+    review: 'The answer is always undefined' },
+  { _id: 5da6ab809d8f6e18cbe4dff7,
+    courseNumber: 'CSCI-UA.0002',
+    courseName: 'Intro To Computer Programming',
+    semester: 'Fall',
+    year: 2018,
+    professor: 'Foobarbaz',
+    review: 'OMG you have to take this course' } ]
+req.query { semesterQ: '', yearQ: '2018', professorQ: '' }
+filtered []
+^C
+(base) Juniperui-MacBook-Pro:src junipersohn$ NODE_ENV=PRODUCTION node app.js
+connecting to mongoose mongodb://student:secret@localhost:27017/hw05
+server started!
+Warning: no saslprep library specified. Passwords will not be sanitized
+req.query { semesterQ: '', yearQ: '2018', professorQ: '' }
+^C
+(base) Juniperui-MacBook-Pro:src junipersohn$ NODE_ENV=PRODUCTION node app.js
+connecting to mongoose mongodb://student:secret@localhost:27017/hw05
+server started!
+Warning: no saslprep library specified. Passwords will not be sanitized
+req.query { semesterQ: '', yearQ: '2018', professorQ: '' }
+req.query {}
+^C
+(base) Juniperui-MacBook-Pro:src junipersohn$ NODE_ENV=PRODUCTION node app.js
+connecting to mongoose mongodb://student:secret@localhost:27017/hw05
+server started!
+Warning: no saslprep library specified. Passwords will not be sanitized
+req.query {}
+^C
+(base) Juniperui-MacBook-Pro:src junipersohn$ NODE_ENV=PRODUCTION node app.js
+connecting to mongoose mongodb://student:secret@localhost:27017/hw05
+server started!
+Warning: no saslprep library specified. Passwords will not be sanitized
+req.query {}
+req.query { semesterQ: '', yearQ: '2018', professorQ: '' }
+^C
+(base) Juniperui-MacBook-Pro:src junipersohn$ NODE_ENV=PRODUCTION node app.js
+connecting to mongoose mongodb://student:secret@localhost:27017/hw05
+server started!
+Warning: no saslprep library specified. Passwords will not be sanitized
+req.query {}
+req.query { semesterQ: '', yearQ: '2018', professorQ: '' }
+req.query {}
+req.query { semesterQ: '', yearQ: '', professorQ: 'Versoza' }
+req.query {}
+req.query { semesterQ: 'Fall', yearQ: '', professorQ: '' }
+^C
+(base) Juniperui-MacBook-Pro:src junipersohn$ NODE_ENV=PRODUCTION node app.js
+connecting to mongoose mongodb://student:secret@localhost:27017/hw05
+server started!
+Warning: no saslprep library specified. Passwords will not be sanitized
+req.query {}
+{}
+req.query { semesterQ: '', yearQ: '2018', professorQ: '' }
+{ year: 2018 }
+req.query {}
+{}
+req.query { semesterQ: '', yearQ: '2018', professorQ: '' }
+{ year: 2018 }
+req.query { semesterQ: '', yearQ: '2015', professorQ: '' }
+{ year: 2015 }
+req.query {}
+{}
+req.query { semesterQ: '', yearQ: '2018', professorQ: '' }
+{ year: 2018 }
+^C
+(base) Juniperui-MacBook-Pro:src junipersohn$ NODE_ENV=PRODUCTION node app.js
+connecting to mongoose mongodb://student:secret@localhost:27017/hw05
+server started!
+Warning: no saslprep library specified. Passwords will not be sanitized
+req.query { semesterQ: '', yearQ: '2018', professorQ: '' }
+{ year: 2018 }
+req.query {}
+{}
+req.query { semesterQ: '', yearQ: '2018', professorQ: '' }
+{ year: 2018 }
+^C
+(base) Juniperui-MacBook-Pro:src junipersohn$ NODE_ENV=PRODUCTION node app.js
+connecting to mongoose mongodb://student:secret@localhost:27017/hw05
+server started!
+Warning: no saslprep library specified. Passwords will not be sanitized
+req.query {}
+{}
+req.query {}
+req.query {}
+app.post/reviews/add req.body { courseNumber: 'cn',
+  courseName: 'cn',
+  semester: 'fall',
+  year: '2019',
+  professor: 'p',
+  review: 'r' }
+TypeError: review.Review is not a constructor
+    at app.post (/Users/junipersohn/AIT/Juniperrr-homework05/src/app.js:76:15)
+    at Layer.handle [as handle_request] (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:275:10)
+    at /Users/junipersohn/AIT/Juniperrr-homework05/src/app.js:34:5
+    at Layer.handle [as handle_request] (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:317:13)
+    at /Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:275:10)
+    at jsonParser (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/body-parser/lib/types/json.js:101:7)
+    at Layer.handle [as handle_request] (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/layer.js:95:5)
+^C
+(base) Juniperui-MacBook-Pro:src junipersohn$ NODE_ENV=PRODUCTION node app.js
+connecting to mongoose mongodb://student:secret@localhost:27017/hw05
+server started!
+Warning: no saslprep library specified. Passwords will not be sanitized
+req.query {}
+{}
+req.query {}
+^C
+(base) Juniperui-MacBook-Pro:src junipersohn$ NODE_ENV=PRODUCTION node app.js
+connecting to mongoose mongodb://student:secret@localhost:27017/hw05
+server started!
+Warning: no saslprep library specified. Passwords will not be sanitized
+req.query {}
+{}
+req.query {}
+req.query {}
+app.post/reviews/add req.body { courseNumber: 'cn',
+  courseName: 'cn',
+  semester: 'Fall',
+  year: '2019',
+  professor: 'me',
+  review: 'good' }
+TypeError: review.Review is not a constructor
+    at app.post (/Users/junipersohn/AIT/Juniperrr-homework05/src/app.js:76:15)
+    at Layer.handle [as handle_request] (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:275:10)
+    at /Users/junipersohn/AIT/Juniperrr-homework05/src/app.js:34:5
+    at Layer.handle [as handle_request] (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:317:13)
+    at /Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:275:10)
+    at jsonParser (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/body-parser/lib/types/json.js:101:7)
+    at Layer.handle [as handle_request] (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/layer.js:95:5)
+^C
+(base) Juniperui-MacBook-Pro:src junipersohn$ NODE_ENV=PRODUCTION node app.js
+connecting to mongoose mongodb://student:secret@localhost:27017/hw05
+server started!
+Warning: no saslprep library specified. Passwords will not be sanitized
+req.query {}
+{}
+req.query {}
+req.query {}
+app.post/reviews/add req.body { courseNumber: 'cn',
+  courseName: 'cn',
+  semester: 'fall',
+  year: '2019',
+  professor: 'me',
+  review: 'good' }
+ReferenceError: Review is not defined
+    at app.post (/Users/junipersohn/AIT/Juniperrr-homework05/src/app.js:76:15)
+    at Layer.handle [as handle_request] (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:275:10)
+    at /Users/junipersohn/AIT/Juniperrr-homework05/src/app.js:34:5
+    at Layer.handle [as handle_request] (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:317:13)
+    at /Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:275:10)
+    at jsonParser (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/body-parser/lib/types/json.js:101:7)
+    at Layer.handle [as handle_request] (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/layer.js:95:5)
+^C
+(base) Juniperui-MacBook-Pro:src junipersohn$ NODE_ENV=PRODUCTION node app.js
+connecting to mongoose mongodb://student:secret@localhost:27017/hw05
+server started!
+Warning: no saslprep library specified. Passwords will not be sanitized
+req.query {}
+{}
+req.query {}
+req.query {}
+app.post/reviews/add req.body { courseNumber: 'cn',
+  courseName: 'cn',
+  semester: 'fall',
+  year: '2019',
+  professor: 'me',
+  review: 'good' }
+TypeError: Reviews.Review is not a constructor
+    at app.post (/Users/junipersohn/AIT/Juniperrr-homework05/src/app.js:76:15)
+    at Layer.handle [as handle_request] (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:275:10)
+    at /Users/junipersohn/AIT/Juniperrr-homework05/src/app.js:34:5
+    at Layer.handle [as handle_request] (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:317:13)
+    at /Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:275:10)
+    at jsonParser (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/body-parser/lib/types/json.js:101:7)
+    at Layer.handle [as handle_request] (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/layer.js:95:5)
+^C
+(base) Juniperui-MacBook-Pro:src junipersohn$ NODE_ENV=PRODUCTION node app.js
+connecting to mongoose mongodb://student:secret@localhost:27017/hw05
+server started!
+Warning: no saslprep library specified. Passwords will not be sanitized
+req.query {}
+{}
+req.query {}
+req.query {}
+app.post/reviews/add req.body { courseNumber: 'cn',
+  courseName: 'cn',
+  semester: 'fall',
+  year: '2019',
+  professor: 'me',
+  review: 'good' }
+TypeError: Cannot use 'in' operator to search for 'typeKey' in cn
+    at Object.exports.options (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/mongoose/lib/utils.js:358:13)
+    at Schema.defaultOptions (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/mongoose/lib/schema.js:350:19)
+    at new Schema (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/mongoose/lib/schema.js:114:23)
+    at app.post (/Users/junipersohn/AIT/Juniperrr-homework05/src/app.js:76:15)
+    at Layer.handle [as handle_request] (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:275:10)
+    at /Users/junipersohn/AIT/Juniperrr-homework05/src/app.js:34:5
+    at Layer.handle [as handle_request] (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:317:13)
+    at /Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:335:12)
+^C
+(base) Juniperui-MacBook-Pro:src junipersohn$ NODE_ENV=PRODUCTION node app.js
+connecting to mongoose mongodb://student:secret@localhost:27017/hw05
+server started!
+Warning: no saslprep library specified. Passwords will not be sanitized
+req.query {}
+{}
+req.query {}
+req.query {}
+app.post/reviews/add req.body { courseNumber: 'cn',
+  courseName: 'cn',
+  semester: 'fall',
+  year: '2019',
+  professor: 'me',
+  review: 'good' }
+TypeError: Assignment to constant variable.
+    at app.post (/Users/junipersohn/AIT/Juniperrr-homework05/src/app.js:77:22)
+    at Layer.handle [as handle_request] (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:275:10)
+    at /Users/junipersohn/AIT/Juniperrr-homework05/src/app.js:34:5
+    at Layer.handle [as handle_request] (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:317:13)
+    at /Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:275:10)
+    at jsonParser (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/body-parser/lib/types/json.js:101:7)
+    at Layer.handle [as handle_request] (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/layer.js:95:5)
+^C
+(base) Juniperui-MacBook-Pro:src junipersohn$ NODE_ENV=PRODUCTION node app.js
+connecting to mongoose mongodb://student:secret@localhost:27017/hw05
+server started!
+Warning: no saslprep library specified. Passwords will not be sanitized
+req.query {}
+{}
+req.query {}
+req.query {}
+app.post/reviews/add req.body { courseNumber: 'cn',
+  courseName: 'cn',
+  semester: 'fall',
+  year: '2019',
+  professor: 'me',
+  review: 'good' }
+TypeError: Assignment to constant variable.
+    at app.post (/Users/junipersohn/AIT/Juniperrr-homework05/src/app.js:77:22)
+    at Layer.handle [as handle_request] (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:275:10)
+    at /Users/junipersohn/AIT/Juniperrr-homework05/src/app.js:34:5
+    at Layer.handle [as handle_request] (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:317:13)
+    at /Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:275:10)
+    at jsonParser (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/body-parser/lib/types/json.js:101:7)
+    at Layer.handle [as handle_request] (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/layer.js:95:5)
+^C
+(base) Juniperui-MacBook-Pro:src junipersohn$ NODE_ENV=PRODUCTION node app.js
+connecting to mongoose mongodb://student:secret@localhost:27017/hw05
+server started!
+Warning: no saslprep library specified. Passwords will not be sanitized
+req.query {}
+{}
+req.query {}
+req.query {}
+app.post/reviews/add req.body { courseNumber: 'cn',
+  courseName: 'cn',
+  semester: 'fall',
+  year: '2019',
+  professor: 'me',
+  review: 'good' }
+TypeError: Assignment to constant variable.
+    at app.post (/Users/junipersohn/AIT/Juniperrr-homework05/src/app.js:77:22)
+    at Layer.handle [as handle_request] (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:275:10)
+    at /Users/junipersohn/AIT/Juniperrr-homework05/src/app.js:34:5
+    at Layer.handle [as handle_request] (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:317:13)
+    at /Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:275:10)
+    at jsonParser (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/body-parser/lib/types/json.js:101:7)
+    at Layer.handle [as handle_request] (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/layer.js:95:5)
+^C
+(base) Juniperui-MacBook-Pro:src junipersohn$ NODE_ENV=PRODUCTION node app.js
+connecting to mongoose mongodb://student:secret@localhost:27017/hw05
+server started!
+Warning: no saslprep library specified. Passwords will not be sanitized
+req.query {}
+{}
+req.query {}
+req.query {}
+app.post/reviews/add req.body { courseNumber: 'cn',
+  courseName: 'cn',
+  semester: 'fall',
+  year: '2019',
+  professor: 'me',
+  review: 'good' }
+TypeError: Cannot use 'in' operator to search for 'typeKey' in cn
+    at Object.exports.options (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/mongoose/lib/utils.js:358:13)
+    at Schema.defaultOptions (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/mongoose/lib/schema.js:350:19)
+    at new Schema (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/mongoose/lib/schema.js:114:23)
+    at app.post (/Users/junipersohn/AIT/Juniperrr-homework05/src/app.js:76:13)
+    at Layer.handle [as handle_request] (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:275:10)
+    at /Users/junipersohn/AIT/Juniperrr-homework05/src/app.js:34:5
+    at Layer.handle [as handle_request] (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:317:13)
+    at /Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:335:12)
+^C
+(base) Juniperui-MacBook-Pro:src junipersohn$ NODE_ENV=PRODUCTION node app.js
+connecting to mongoose mongodb://student:secret@localhost:27017/hw05
+server started!
+Warning: no saslprep library specified. Passwords will not be sanitized
+req.query {}
+{}
+req.query {}
+req.query {}
+app.post/reviews/add req.body { courseNumber: 'cn',
+  courseName: 'cn',
+  semester: 'fall',
+  year: '2019',
+  professor: 'me',
+  review: 'good' }
+TypeError: Cannot use 'in' operator to search for 'typeKey' in cn
+    at Object.exports.options (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/mongoose/lib/utils.js:358:13)
+    at Schema.defaultOptions (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/mongoose/lib/schema.js:350:19)
+    at new Schema (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/mongoose/lib/schema.js:114:23)
+    at app.post (/Users/junipersohn/AIT/Juniperrr-homework05/src/app.js:76:13)
+    at Layer.handle [as handle_request] (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:275:10)
+    at /Users/junipersohn/AIT/Juniperrr-homework05/src/app.js:34:5
+    at Layer.handle [as handle_request] (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:317:13)
+    at /Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:335:12)
+^C
+(base) Juniperui-MacBook-Pro:src junipersohn$ NODE_ENV=PRODUCTION node app.js
+connecting to mongoose mongodb://student:secret@localhost:27017/hw05
+server started!
+Warning: no saslprep library specified. Passwords will not be sanitized
+req.query {}
+{}
+^C
+(base) Juniperui-MacBook-Pro:src junipersohn$ NODE_ENV=PRODUCTION node app.js
+connecting to mongoose mongodb://student:secret@localhost:27017/hw05
+
+/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/mongoose/lib/index.js:497
+      throw new mongoose.Error.MissingSchemaError(name);
+      ^
+MissingSchemaError: Schema hasn't been registered for model "Review".
+Use mongoose.model(name, schema)
+    at new MissingSchemaError (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/mongoose/lib/error/missingSchema.js:22:11)
+    at Mongoose.model (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/mongoose/lib/index.js:497:13)
+    at Object.<anonymous> (/Users/junipersohn/AIT/Juniperrr-homework05/src/app.js:15:26)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+(base) Juniperui-MacBook-Pro:src junipersohn$ NODE_ENV=PRODUCTION node app.js
+connecting to mongoose mongodb://student:secret@localhost:27017/hw05
+server started!
+Warning: no saslprep library specified. Passwords will not be sanitized
+req.query {}
+{}
+ReferenceError: Reviews is not defined
+    at app.get (/Users/junipersohn/AIT/Juniperrr-homework05/src/app.js:49:5)
+    at Layer.handle [as handle_request] (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:275:10)
+    at /Users/junipersohn/AIT/Juniperrr-homework05/src/app.js:32:5
+    at Layer.handle [as handle_request] (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:317:13)
+    at /Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:275:10)
+    at jsonParser (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/body-parser/lib/types/json.js:110:7)
+    at Layer.handle [as handle_request] (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/layer.js:95:5)
+^C
+(base) Juniperui-MacBook-Pro:src junipersohn$ NODE_ENV=PRODUCTION node app.js
+connecting to mongoose mongodb://student:secret@localhost:27017/hw05
+server started!
+Warning: no saslprep library specified. Passwords will not be sanitized
+db connected!
+req.query {}
+{}
+ReferenceError: Reviews is not defined
+    at app.get (/Users/junipersohn/AIT/Juniperrr-homework05/src/app.js:49:5)
+    at Layer.handle [as handle_request] (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:275:10)
+    at /Users/junipersohn/AIT/Juniperrr-homework05/src/app.js:32:5
+    at Layer.handle [as handle_request] (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:317:13)
+    at /Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:275:10)
+    at jsonParser (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/body-parser/lib/types/json.js:110:7)
+    at Layer.handle [as handle_request] (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/layer.js:95:5)
+^C
+(base) Juniperui-MacBook-Pro:src junipersohn$ NODE_ENV=PRODUCTION node app.js
+
+connecting to mongoose mongodb://student:secret@localhost:27017/hw05
+server started!
+Warning: no saslprep library specified. Passwords will not be sanitized
+db connected!
+req.query {}
+{}
+req.query {}
+^C
+(base) Juniperui-MacBook-Pro:src junipersohn$ NODE_ENV=PRODUCTION node app.js
+connecting to mongoose mongodb://student:secret@localhost:27017/hw05
+server started!
+Warning: no saslprep library specified. Passwords will not be sanitized
+db connected!
+req.query {}
+req.query {}
+req.query {}
+{}
+^C
+(base) Juniperui-MacBook-Pro:src junipersohn$ NODE_ENV=PRODUCTION node app.js
+connecting to mongoose mongodb://student:secret@localhost:27017/hw05
+server started!
+Warning: no saslprep library specified. Passwords will not be sanitized
+db connected!
+req.query {}
+{}
+req.query {}
+req.query {}
+req.query {}
+{}
+^C
+(base) Juniperui-MacBook-Pro:src junipersohn$ NODE_ENV=PRODUCTION node app.js
+connecting to mongoose mongodb://student:secret@localhost:27017/hw05
+server started!
+Warning: no saslprep library specified. Passwords will not be sanitized
+db connected!
+^C
+(base) Juniperui-MacBook-Pro:src junipersohn$ npm i -g nodemon
+npm WARN checkPermissions Missing write access to /usr/local/lib/node_modules
+npm ERR! path /usr/local/lib/node_modules
+npm ERR! code EACCES
+npm ERR! errno -13
+npm ERR! syscall access
+npm ERR! Error: EACCES: permission denied, access '/usr/local/lib/node_modules'
+npm ERR!  { [Error: EACCES: permission denied, access '/usr/local/lib/node_modules']
+npm ERR!   stack:
+npm ERR!    'Error: EACCES: permission denied, access \'/usr/local/lib/node_modules\'',
+npm ERR!   errno: -13,
+npm ERR!   code: 'EACCES',
+npm ERR!   syscall: 'access',
+npm ERR!   path: '/usr/local/lib/node_modules' }
+npm ERR! 
+npm ERR! The operation was rejected by your operating system.
+npm ERR! It is likely you do not have the permissions to access this file as the current user
+npm ERR! 
+npm ERR! If you believe this might be a permissions issue, please double-check the
+npm ERR! permissions of the file and its containing directories, or try running
+npm ERR! the command again as root/Administrator (though this is not recommended).
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /Users/junipersohn/.npm/_logs/2019-10-17T18_59_06_881Z-debug.log
+(base) Juniperui-MacBook-Pro:src junipersohn$ npm i -g nodemon
+npm WARN checkPermissions Missing write access to /usr/local/lib/node_modules
+npm ERR! path /usr/local/lib/node_modules
+npm ERR! code EACCES
+npm ERR! errno -13
+npm ERR! syscall access
+npm ERR! Error: EACCES: permission denied, access '/usr/local/lib/node_modules'
+npm ERR!  { [Error: EACCES: permission denied, access '/usr/local/lib/node_modules']
+npm ERR!   stack:
+npm ERR!    'Error: EACCES: permission denied, access \'/usr/local/lib/node_modules\'',
+npm ERR!   errno: -13,
+npm ERR!   code: 'EACCES',
+npm ERR!   syscall: 'access',
+npm ERR!   path: '/usr/local/lib/node_modules' }
+npm ERR! 
+npm ERR! The operation was rejected by your operating system.
+npm ERR! It is likely you do not have the permissions to access this file as the current user
+npm ERR! 
+npm ERR! If you believe this might be a permissions issue, please double-check the
+npm ERR! permissions of the file and its containing directories, or try running
+npm ERR! the command again as root/Administrator (though this is not recommended).
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /Users/junipersohn/.npm/_logs/2019-10-17T18_59_26_605Z-debug.log
+(base) Juniperui-MacBook-Pro:src junipersohn$ NODE_ENV=PRODUCTION node app.js
+connecting to mongoose mongodb://student:secret@localhost:27017/hw05
+server started!
+Warning: no saslprep library specified. Passwords will not be sanitized
+db connected!
+req.query {}
+req.query {}
+req.query {}
+^C
+(base) Juniperui-MacBook-Pro:src junipersohn$ NODE_ENV=PRODUCTION node app.js
+connecting to mongoose mongodb://student:secret@localhost:27017/hw05
+server started!
+Warning: no saslprep library specified. Passwords will not be sanitized
+db connected!
+req.query {}
+{}
+req.query {}
+req.query {}
+req.query {}
+^C
+(base) Juniperui-MacBook-Pro:src junipersohn$ NODE_ENV=PRODUCTION node app.js
+connecting to mongoose mongodb://student:secret@localhost:27017/hw05
+server started!
+Warning: no saslprep library specified. Passwords will not be sanitized
+db connected!
+req.query {}
+{}
+req.query {}
+req.query {}
+req.query {}
+{}
+^C
+(base) Juniperui-MacBook-Pro:src junipersohn$ NODE_ENV=PRODUCTION node app.js
+connecting to mongoose mongodb://student:secret@localhost:27017/hw05
+server started!
+Warning: no saslprep library specified. Passwords will not be sanitized
+db connected!
+req.query { semesterQ: 'Fall', yearQ: '2018', professorQ: '' }
+{ year: 2018, semester: 'Fall' }
+req.query { semesterQ: '', yearQ: '2016', professorQ: '' }
+{ year: 2016 }
+^C
+(base) Juniperui-MacBook-Pro:src junipersohn$ sudo npm install -g nodemon
+Password:
+Sorry, try again.
+Password:
+/usr/local/bin/nodemon -> /usr/local/lib/node_modules/nodemon/bin/nodemon.js
+
+> fsevents@1.2.9 install /usr/local/lib/node_modules/nodemon/node_modules/fsevents
+> node install
+
+node-pre-gyp WARN Using needle for node-pre-gyp https download 
+node-pre-gyp WARN Pre-built binaries not installable for fsevents@1.2.9 and node@10.16.3 (node-v64 ABI, unknown) (falling back to source compile with node-gyp) 
+node-pre-gyp WARN Hit error EACCES: permission denied, mkdir '/usr/local/lib/node_modules/nodemon/node_modules/fsevents/lib' 
+gyp WARN EACCES user "root" does not have permission to access the dev dir "/Users/junipersohn/.node-gyp/10.16.3"
+gyp WARN EACCES attempting to reinstall using temporary dev dir "/usr/local/lib/node_modules/nodemon/node_modules/fsevents/.node-gyp"
+gyp WARN install got an error, rolling back install
+gyp WARN install got an error, rolling back install
+gyp ERR! configure error 
+gyp ERR! stack Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/nodemon/node_modules/fsevents/.node-gyp'
+gyp ERR! System Darwin 19.0.0
+gyp ERR! command "/usr/local/bin/node" "/usr/local/lib/node_modules/npm/node_modules/node-gyp/bin/node-gyp.js" "configure" "--fallback-to-build" "--module=/usr/local/lib/node_modules/nodemon/node_modules/fsevents/lib/binding/Release/node-v64-darwin-x64/fse.node" "--module_name=fse" "--module_path=/usr/local/lib/node_modules/nodemon/node_modules/fsevents/lib/binding/Release/node-v64-darwin-x64" "--napi_version=4" "--node_abi_napi=napi" "--napi_build_version=0" "--node_napi_label=node-v64"
+gyp ERR! cwd /usr/local/lib/node_modules/nodemon/node_modules/fsevents
+gyp ERR! node -v v10.16.3
+gyp ERR! node-gyp -v v3.8.0
+gyp ERR! not ok 
+node-pre-gyp ERR! build error 
+node-pre-gyp ERR! stack Error: Failed to execute '/usr/local/bin/node /usr/local/lib/node_modules/npm/node_modules/node-gyp/bin/node-gyp.js configure --fallback-to-build --module=/usr/local/lib/node_modules/nodemon/node_modules/fsevents/lib/binding/Release/node-v64-darwin-x64/fse.node --module_name=fse --module_path=/usr/local/lib/node_modules/nodemon/node_modules/fsevents/lib/binding/Release/node-v64-darwin-x64 --napi_version=4 --node_abi_napi=napi --napi_build_version=0 --node_napi_label=node-v64' (1)
+node-pre-gyp ERR! stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/nodemon/node_modules/fsevents/node_modules/node-pre-gyp/lib/util/compile.js:83:29)
+node-pre-gyp ERR! stack     at ChildProcess.emit (events.js:198:13)
+node-pre-gyp ERR! stack     at maybeClose (internal/child_process.js:982:16)
+node-pre-gyp ERR! stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:259:5)
+node-pre-gyp ERR! System Darwin 19.0.0
+node-pre-gyp ERR! command "/usr/local/bin/node" "/usr/local/lib/node_modules/nodemon/node_modules/fsevents/node_modules/node-pre-gyp/bin/node-pre-gyp" "install" "--fallback-to-build"
+node-pre-gyp ERR! cwd /usr/local/lib/node_modules/nodemon/node_modules/fsevents
+node-pre-gyp ERR! node -v v10.16.3
+node-pre-gyp ERR! node-pre-gyp -v v0.12.0
+node-pre-gyp ERR! not ok 
+Failed to execute '/usr/local/bin/node /usr/local/lib/node_modules/npm/node_modules/node-gyp/bin/node-gyp.js configure --fallback-to-build --module=/usr/local/lib/node_modules/nodemon/node_modules/fsevents/lib/binding/Release/node-v64-darwin-x64/fse.node --module_name=fse --module_path=/usr/local/lib/node_modules/nodemon/node_modules/fsevents/lib/binding/Release/node-v64-darwin-x64 --napi_version=4 --node_abi_napi=napi --napi_build_version=0 --node_napi_label=node-v64' (1)
+
+> nodemon@1.19.4 postinstall /usr/local/lib/node_modules/nodemon
+> node bin/postinstall || exit 0
+
+Love nodemon? You can now support the project via the open collective:
+ > https://opencollective.com/nodemon/donate
+
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.9 (node_modules/nodemon/node_modules/fsevents):
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.9 install: `node install`
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: Exit status 1
+
++ nodemon@1.19.4
+added 221 packages from 128 contributors in 9.003s
+(base) Juniperui-MacBook-Pro:src junipersohn$ node app.js
+connecting to mongoose mongodb://localhost/hw05
+server started!
+db connected!
+req.query {}
+{}
+req.query { semesterQ: '', yearQ: '2016', professorQ: '' }
+{ year: 2016 }
+req.query {}
+req.query {}
+req.query {}
+{}
+req.query { semesterQ: '', yearQ: '2000', professorQ: '' }
+{ year: 2000 }
+^C
+(base) Juniperui-MacBook-Pro:src junipersohn$ nodemon app.js
+[nodemon] 1.19.4
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching dir(s): *.*
+[nodemon] watching extensions: js,mjs,json
+[nodemon] starting `node app.js`
+connecting to mongoose mongodb://localhost/hw05
+server started!
+db connected!
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+connecting to mongoose mongodb://localhost/hw05
+server started!
+db connected!
+req.query {}
+{}
+req.query {}
+req.query {}
+req.query {}
+{}
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+connecting to mongoose mongodb://localhost/hw05
+server started!
+db connected!
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+connecting to mongoose mongodb://localhost/hw05
+server started!
+db connected!
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+connecting to mongoose mongodb://localhost/hw05
+/Users/junipersohn/AIT/Juniperrr-homework05/src/app.js:93
+});f 
+   ^
+
+ReferenceError: f is not defined
+    at Object.<anonymous> (/Users/junipersohn/AIT/Juniperrr-homework05/src/app.js:93:4)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+connecting to mongoose mongodb://localhost/hw05
+/Users/junipersohn/AIT/Juniperrr-homework05/src/app.js:93
+});f
+   ^
+
+ReferenceError: f is not defined
+    at Object.<anonymous> (/Users/junipersohn/AIT/Juniperrr-homework05/src/app.js:93:4)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+connecting to mongoose mongodb://localhost/hw05
+server started!
+db connected!
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+connecting to mongoose mongodb://localhost/hw05
+server started!
+db connected!
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+connecting to mongoose mongodb://localhost/hw05
+server started!
+db connected!
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+connecting to mongoose mongodb://localhost/hw05
+server started!
+db connected!
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+/Users/junipersohn/AIT/Juniperrr-homework05/src/app.js:31
+app.use(function(req, res, next) {
+^
+
+SyntaxError: Identifier 'app' has already been declared
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+connecting to mongoose mongodb://localhost/hw05
+server started!
+db connected!
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+connecting to mongoose mongodb://localhost/hw05
+server started!
+db connected!
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+connecting to mongoose mongodb://localhost/hw05
+server started!
+db connected!
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+connecting to mongoose mongodb://localhost/hw05
+server started!
+db connected!
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+connecting to mongoose mongodb://localhost/hw05
+server started!
+db connected!
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+connecting to mongoose mongodb://localhost/hw05
+server started!
+db connected!
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+connecting to mongoose mongodb://localhost/hw05
+server started!
+db connected!
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+connecting to mongoose mongodb://localhost/hw05
+server started!
+db connected!
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+connecting to mongoose mongodb://localhost/hw05
+server started!
+db connected!
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+connecting to mongoose mongodb://localhost/hw05
+server started!
+db connected!
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+connecting to mongoose mongodb://localhost/hw05
+server started!
+db connected!
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+connecting to mongoose mongodb://localhost/hw05
+server started!
+db connected!
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+connecting to mongoose mongodb://localhost/hw05
+server started!
+db connected!
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+connecting to mongoose mongodb://localhost/hw05
+server started!
+db connected!
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+connecting to mongoose mongodb://localhost/hw05
+server started!
+db connected!
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+connecting to mongoose mongodb://localhost/hw05
+server started!
+db connected!
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+connecting to mongoose mongodb://localhost/hw05
+server started!
+db connected!
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+connecting to mongoose mongodb://localhost/hw05
+server started!
+db connected!
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+connecting to mongoose mongodb://localhost/hw05
+server started!
+db connected!
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+connecting to mongoose mongodb://localhost/hw05
+server started!
+db connected!
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+connecting to mongoose mongodb://localhost/hw05
+server started!
+db connected!
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+internal/modules/cjs/loader.js:638
+    throw err;
+    ^
+
+Error: Cannot find module 'express-session'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/Users/junipersohn/AIT/Juniperrr-homework05/src/app.js:9:15)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+internal/modules/cjs/loader.js:638
+    throw err;
+    ^
+
+Error: Cannot find module 'express-session'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/Users/junipersohn/AIT/Juniperrr-homework05/src/app.js:9:17)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+internal/modules/cjs/loader.js:638
+    throw err;
+    ^
+
+Error: Cannot find module 'express-session'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/Users/junipersohn/AIT/Juniperrr-homework05/src/app.js:9:17)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+internal/modules/cjs/loader.js:638
+    throw err;
+    ^
+
+Error: Cannot find module 'express-session'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/Users/junipersohn/AIT/Juniperrr-homework05/src/app.js:9:17)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+internal/modules/cjs/loader.js:638
+    throw err;
+    ^
+
+Error: Cannot find module 'express-session'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/Users/junipersohn/AIT/Juniperrr-homework05/src/app.js:9:17)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+internal/modules/cjs/loader.js:638
+    throw err;
+    ^
+
+Error: Cannot find module 'express-session'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/Users/junipersohn/AIT/Juniperrr-homework05/src/app.js:9:17)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+internal/modules/cjs/loader.js:638
+    throw err;
+    ^
+
+Error: Cannot find module 'express-session'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/Users/junipersohn/AIT/Juniperrr-homework05/src/app.js:9:17)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+internal/modules/cjs/loader.js:638
+    throw err;
+    ^
+
+Error: Cannot find module 'express-session'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/Users/junipersohn/AIT/Juniperrr-homework05/src/app.js:9:17)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+internal/modules/cjs/loader.js:638
+    throw err;
+    ^
+
+Error: Cannot find module 'express-session'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/Users/junipersohn/AIT/Juniperrr-homework05/src/app.js:9:17)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+internal/modules/cjs/loader.js:638
+    throw err;
+    ^
+
+Error: Cannot find module 'express-session'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/Users/junipersohn/AIT/Juniperrr-homework05/src/app.js:9:17)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+internal/modules/cjs/loader.js:638
+    throw err;
+    ^
+
+Error: Cannot find module 'express-session'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/Users/junipersohn/AIT/Juniperrr-homework05/src/app.js:9:17)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+internal/modules/cjs/loader.js:638
+    throw err;
+    ^
+
+Error: Cannot find module 'express-session'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/Users/junipersohn/AIT/Juniperrr-homework05/src/app.js:9:17)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+internal/modules/cjs/loader.js:638
+    throw err;
+    ^
+
+Error: Cannot find module 'express-session'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/Users/junipersohn/AIT/Juniperrr-homework05/src/app.js:9:17)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+internal/modules/cjs/loader.js:638
+    throw err;
+    ^
+
+Error: Cannot find module 'express-session'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/Users/junipersohn/AIT/Juniperrr-homework05/src/app.js:9:17)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+internal/modules/cjs/loader.js:638
+    throw err;
+    ^
+
+Error: Cannot find module 'express-session'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/Users/junipersohn/AIT/Juniperrr-homework05/src/app.js:9:17)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+internal/modules/cjs/loader.js:638
+    throw err;
+    ^
+
+Error: Cannot find module 'express-session'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/Users/junipersohn/AIT/Juniperrr-homework05/src/app.js:9:17)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+internal/modules/cjs/loader.js:638
+    throw err;
+    ^
+
+Error: Cannot find module 'express-session'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/Users/junipersohn/AIT/Juniperrr-homework05/src/app.js:9:17)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+internal/modules/cjs/loader.js:638
+    throw err;
+    ^
+
+Error: Cannot find module 'express-session'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/Users/junipersohn/AIT/Juniperrr-homework05/src/app.js:9:17)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+internal/modules/cjs/loader.js:638
+    throw err;
+    ^
+
+Error: Cannot find module 'express-session'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/Users/junipersohn/AIT/Juniperrr-homework05/src/app.js:9:17)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+internal/modules/cjs/loader.js:638
+    throw err;
+    ^
+
+Error: Cannot find module 'express-session'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/Users/junipersohn/AIT/Juniperrr-homework05/src/app.js:9:17)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+internal/modules/cjs/loader.js:638
+    throw err;
+    ^
+
+Error: Cannot find module 'express-session'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/Users/junipersohn/AIT/Juniperrr-homework05/src/app.js:9:17)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+internal/modules/cjs/loader.js:638
+    throw err;
+    ^
+
+Error: Cannot find module 'express-session'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/Users/junipersohn/AIT/Juniperrr-homework05/src/app.js:9:17)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+internal/modules/cjs/loader.js:638
+    throw err;
+    ^
+
+Error: Cannot find module 'express-session'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/Users/junipersohn/AIT/Juniperrr-homework05/src/app.js:9:17)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+internal/modules/cjs/loader.js:638
+    throw err;
+    ^
+
+Error: Cannot find module 'express-session'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/Users/junipersohn/AIT/Juniperrr-homework05/src/app.js:9:17)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+internal/modules/cjs/loader.js:638
+    throw err;
+    ^
+
+Error: Cannot find module 'express-session'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/Users/junipersohn/AIT/Juniperrr-homework05/src/app.js:9:17)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+internal/modules/cjs/loader.js:638
+    throw err;
+    ^
+
+Error: Cannot find module 'express-session'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/Users/junipersohn/AIT/Juniperrr-homework05/src/app.js:9:17)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+internal/modules/cjs/loader.js:638
+    throw err;
+    ^
+
+Error: Cannot find module 'express-session'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/Users/junipersohn/AIT/Juniperrr-homework05/src/app.js:9:17)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+internal/modules/cjs/loader.js:638
+    throw err;
+    ^
+
+Error: Cannot find module 'express-session'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/Users/junipersohn/AIT/Juniperrr-homework05/src/app.js:9:17)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+internal/modules/cjs/loader.js:638
+    throw err;
+    ^
+
+Error: Cannot find module 'express-session'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/Users/junipersohn/AIT/Juniperrr-homework05/src/app.js:9:17)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+internal/modules/cjs/loader.js:638
+    throw err;
+    ^
+
+Error: Cannot find module 'express-session'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/Users/junipersohn/AIT/Juniperrr-homework05/src/app.js:9:17)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+[nodemon] app crashed - waiting for file changes before starting...
+^C(base) Juniperui-MacBook-Pro:src junipersohn$ NODE_ENV=PRODUCTION node app.js
+internal/modules/cjs/loader.js:638
+    throw err;
+    ^
+
+Error: Cannot find module 'express-session'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/Users/junipersohn/AIT/Juniperrr-homework05/src/app.js:9:17)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+(base) Juniperui-MacBook-Pro:src junipersohn$ npm install express-session --save
+npm WARN juniperrr-homework05@1.0.0 No description
+
++ express-session@1.17.0
+added 7 packages from 8 contributors and audited 215 packages in 2.131s
+found 0 vulnerabilities
+
+(base) Juniperui-MacBook-Pro:src junipersohn$ NODE_ENV=PRODUCTION node app.js
+connecting to mongoose mongodb://student:secret@localhost:27017/hw05
+server started!
+Warning: no saslprep library specified. Passwords will not be sanitized
+db connected!
+req.query {}
+TypeError: Cannot read property 'anonymous' of undefined
+    at /Users/junipersohn/AIT/Juniperrr-homework05/src/app.js:39:43
+    at Layer.handle [as handle_request] (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:317:13)
+    at /Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:275:10)
+    at session (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express-session/index.js:468:7)
+    at Layer.handle [as handle_request] (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:317:13)
+    at /Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:275:10)
+    at jsonParser (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/body-parser/lib/types/json.js:110:7)
+    at Layer.handle [as handle_request] (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:317:13)
+    at /Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:284:7
+^C
+(base) Juniperui-MacBook-Pro:src junipersohn$ NODE_ENV=PRODUCTION node app.js
+connecting to mongoose mongodb://student:secret@localhost:27017/hw05
+server started!
+Warning: no saslprep library specified. Passwords will not be sanitized
+db connected!
+req.query {}
+{}
+Error [ERR_HTTP_HEADERS_SENT]: /Users/junipersohn/AIT/Juniperrr-homework05/src/views/layout.hbs: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:470:11)
+    at ServerResponse.header (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/response.js:771:10)
+    at ServerResponse.send (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/response.js:170:12)
+    at done (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/response.js:1008:10)
+    at /Users/junipersohn/node_modules/hbs/lib/hbs.js:106:11
+    at Object.done (/Users/junipersohn/node_modules/hbs/lib/async.js:74:20)
+    at /Users/junipersohn/node_modules/hbs/lib/hbs.js:101:20
+    at /Users/junipersohn/node_modules/hbs/lib/hbs.js:82:11
+    at Object.done (/Users/junipersohn/node_modules/hbs/lib/async.js:74:20)
+    at /Users/junipersohn/node_modules/hbs/lib/hbs.js:77:20
+    at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+^C
+(base) Juniperui-MacBook-Pro:src junipersohn$ NODE_ENV=PRODUCTION node app.js
+connecting to mongoose mongodb://student:secret@localhost:27017/hw05
+server started!
+Warning: no saslprep library specified. Passwords will not be sanitized
+db connected!
+req.query {}
+{}
+Error [ERR_HTTP_HEADERS_SENT]: /Users/junipersohn/AIT/Juniperrr-homework05/src/views/layout.hbs: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:470:11)
+    at ServerResponse.header (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/response.js:771:10)
+    at ServerResponse.send (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/response.js:170:12)
+    at done (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/response.js:1008:10)
+    at /Users/junipersohn/node_modules/hbs/lib/hbs.js:106:11
+    at Object.done (/Users/junipersohn/node_modules/hbs/lib/async.js:74:20)
+    at /Users/junipersohn/node_modules/hbs/lib/hbs.js:101:20
+    at /Users/junipersohn/node_modules/hbs/lib/hbs.js:82:11
+    at Object.done (/Users/junipersohn/node_modules/hbs/lib/async.js:74:20)
+    at /Users/junipersohn/node_modules/hbs/lib/hbs.js:77:20
+    at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+req.query {}
+{}
+events.js:174
+      throw er; // Unhandled 'error' event
+      ^
+
+TypeError: Cannot create property '_locals' on number '1'
+    at ServerResponse.render (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/response.js:1003:16)
+    at Reviews.find (/Users/junipersohn/AIT/Juniperrr-homework05/src/app.js:74:13)
+    at /Users/junipersohn/AIT/Juniperrr-homework05/node_modules/mongoose/lib/model.js:4598:16
+    at /Users/junipersohn/AIT/Juniperrr-homework05/node_modules/mongoose/lib/query.js:4351:12
+    at process.nextTick (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/mongoose/lib/helpers/query/completeMany.js:35:39)
+    at process._tickCallback (internal/process/next_tick.js:61:11)
+Emitted 'error' event at:
+    at /Users/junipersohn/AIT/Juniperrr-homework05/node_modules/mongoose/lib/model.js:4600:13
+    at /Users/junipersohn/AIT/Juniperrr-homework05/node_modules/mongoose/lib/query.js:4351:12
+    at process.nextTick (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/mongoose/lib/helpers/query/completeMany.js:35:39)
+    at process._tickCallback (internal/process/next_tick.js:61:11)
+(base) Juniperui-MacBook-Pro:src junipersohn$ 
+(base) Juniperui-MacBook-Pro:src junipersohn$ NODE_ENV=PRODUCTION node app.js
+connecting to mongoose mongodb://student:secret@localhost:27017/hw05
+server started!
+Warning: no saslprep library specified. Passwords will not be sanitized
+db connected!
+req.query {}
+undefined
+{}
+Error [ERR_HTTP_HEADERS_SENT]: /Users/junipersohn/AIT/Juniperrr-homework05/src/views/layout.hbs: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:470:11)
+    at ServerResponse.header (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/response.js:771:10)
+    at ServerResponse.send (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/response.js:170:12)
+    at done (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/response.js:1008:10)
+    at /Users/junipersohn/node_modules/hbs/lib/hbs.js:106:11
+    at Object.done (/Users/junipersohn/node_modules/hbs/lib/async.js:74:20)
+    at /Users/junipersohn/node_modules/hbs/lib/hbs.js:101:20
+    at /Users/junipersohn/node_modules/hbs/lib/hbs.js:82:11
+    at Object.done (/Users/junipersohn/node_modules/hbs/lib/async.js:74:20)
+    at /Users/junipersohn/node_modules/hbs/lib/hbs.js:77:20
+    at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+^C
+(base) Juniperui-MacBook-Pro:src junipersohn$ NODE_ENV=PRODUCTION node app.js
+connecting to mongoose mongodb://student:secret@localhost:27017/hw05
+server started!
+Warning: no saslprep library specified. Passwords will not be sanitized
+db connected!
+req.query {}
+undefined
+{}
+req.query { semesterQ: '', yearQ: '2000', professorQ: '' }
+undefined
+{ year: 2000 }
+req.query {}
+undefined
+req.query {}
+undefined
+Error: Failed to lookup view "mine" in views directory "/Users/junipersohn/AIT/Juniperrr-homework05/src/views"
+    at Function.render (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/application.js:580:17)
+    at ServerResponse.render (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/response.js:1012:7)
+    at app.get (/Users/junipersohn/AIT/Juniperrr-homework05/src/app.js:88:9)
+    at Layer.handle [as handle_request] (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:275:10)
+    at /Users/junipersohn/AIT/Juniperrr-homework05/src/app.js:41:5
+    at Layer.handle [as handle_request] (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:317:13)
+    at /Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:275:10)
+req.query { semesterQ: '', yearQ: '', professorQ: '' }
+undefined
+{}
+^C
+(base) Juniperui-MacBook-Pro:src junipersohn$ NODE_ENV=PRODUCTION node app.js
+connecting to mongoose mongodb://student:secret@localhost:27017/hw05
+server started!
+Warning: no saslprep library specified. Passwords will not be sanitized
+db connected!
+req.query { semesterQ: '', yearQ: '', professorQ: '' }
+undefined
+{}
+req.query {}
+undefined
+req.query {}
+undefined
+req.query {}
+undefined
+{}
+req.query {}
+undefined
+Error: Failed to lookup view "mine" in views directory "/Users/junipersohn/AIT/Juniperrr-homework05/src/views"
+    at Function.render (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/application.js:580:17)
+    at ServerResponse.render (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/response.js:1012:7)
+    at app.get (/Users/junipersohn/AIT/Juniperrr-homework05/src/app.js:87:9)
+    at Layer.handle [as handle_request] (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:275:10)
+    at /Users/junipersohn/AIT/Juniperrr-homework05/src/app.js:41:5
+    at Layer.handle [as handle_request] (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:317:13)
+    at /Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:275:10)
+^C
+(base) Juniperui-MacBook-Pro:src junipersohn$ NODE_ENV=PRODUCTION node app.js
+connecting to mongoose mongodb://student:secret@localhost:27017/hw05
+server started!
+Warning: no saslprep library specified. Passwords will not be sanitized
+db connected!
+req.query {}
+undefined
+{}
+req.query {}
+undefined
+req.query {}
+undefined
+Error: Failed to lookup view "mine" in views directory "/Users/junipersohn/AIT/Juniperrr-homework05/src/views"
+    at Function.render (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/application.js:580:17)
+    at ServerResponse.render (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/response.js:1012:7)
+    at app.get (/Users/junipersohn/AIT/Juniperrr-homework05/src/app.js:88:9)
+    at Layer.handle [as handle_request] (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:275:10)
+    at /Users/junipersohn/AIT/Juniperrr-homework05/src/app.js:47:5
+    at Layer.handle [as handle_request] (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:317:13)
+    at /Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:275:10)
+req.query {}
+undefined
+{}
+^C
+(base) Juniperui-MacBook-Pro:src junipersohn$ 
+(base) Juniperui-MacBook-Pro:src junipersohn$ NODE_ENV=PRODUCTION node app.js
+connecting to mongoose mongodb://student:secret@localhost:27017/hw05
+server started!
+Warning: no saslprep library specified. Passwords will not be sanitized
+db connected!
+req.query {}
+undefined
+res.locals.timesAccessed undefined
+req.session.timesAccessed 1
+{}
+req.query {}
+undefined
+res.locals.timesAccessed undefined
+req.session.timesAccessed 2
+req.query {}
+undefined
+res.locals.timesAccessed undefined
+req.session.timesAccessed 3
+{}
+^C
+(base) Juniperui-MacBook-Pro:src junipersohn$ NODE_ENV=PRODUCTION node app.js
+connecting to mongoose mongodb://student:secret@localhost:27017/hw05
+server started!
+Warning: no saslprep library specified. Passwords will not be sanitized
+db connected!
+req.query {}
+undefined
+res.locals.timesAccessed undefined
+req.session.timesAccessed 1
+cookies undefined
+^C
+(base) Juniperui-MacBook-Pro:src junipersohn$ NODE_ENV=PRODUCTION node app.js
+connecting to mongoose mongodb://student:secret@localhost:27017/hw05
+server started!
+Warning: no saslprep library specified. Passwords will not be sanitized
+db connected!
+^C
+(base) Juniperui-MacBook-Pro:src junipersohn$ NODE_ENV=PRODUCTION node app.js
+connecting to mongoose mongodb://student:secret@localhost:27017/hw05
+server started!
+Warning: no saslprep library specified. Passwords will not be sanitized
+db connected!
+^C
+(base) Juniperui-MacBook-Pro:src junipersohn$ NODE_ENV=PRODUCTION node app.js
+connecting to mongoose mongodb://student:secret@localhost:27017/hw05
+server started!
+Warning: no saslprep library specified. Passwords will not be sanitized
+db connected!
+req.query {}
+undefined
+res.locals.timesAccessed undefined
+req.session.timesAccessed 1
+cookies connect.sid=s%3AlMmmGHNG3L_wZ83-3iO9ihmEJQj3MyLD.fuSV6k2DS8q0jbnvDpdyMqrblQnWxQNsDgewxhxanzg
+req.headers { host: 'localhost:3000',
+  connection: 'keep-alive',
+  'cache-control': 'max-age=0',
+  'upgrade-insecure-requests': '1',
+  'user-agent':
+   'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36',
+  'sec-fetch-mode': 'navigate',
+  accept:
+   'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'sec-fetch-site': 'cross-site',
+  'accept-encoding': 'gzip, deflate, br',
+  'accept-language': 'en-US,en;q=0.9,ko;q=0.8',
+  cookie:
+   'connect.sid=s%3AlMmmGHNG3L_wZ83-3iO9ihmEJQj3MyLD.fuSV6k2DS8q0jbnvDpdyMqrblQnWxQNsDgewxhxanzg',
+  'if-none-match': 'W/"908-wVQE7zwh8v1JAqTl7jGB9xeiIig"' }
+req.query {}
+undefined
+res.locals.timesAccessed undefined
+req.session.timesAccessed 1
+cookies connect.sid=s%3AlMmmGHNG3L_wZ83-3iO9ihmEJQj3MyLD.fuSV6k2DS8q0jbnvDpdyMqrblQnWxQNsDgewxhxanzg
+req.headers { host: 'localhost:3000',
+  connection: 'keep-alive',
+  'cache-control': 'max-age=0',
+  'upgrade-insecure-requests': '1',
+  'user-agent':
+   'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36',
+  'sec-fetch-mode': 'navigate',
+  'sec-fetch-user': '?1',
+  accept:
+   'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'sec-fetch-site': 'cross-site',
+  'accept-encoding': 'gzip, deflate, br',
+  'accept-language': 'en-US,en;q=0.9,ko;q=0.8',
+  cookie:
+   'connect.sid=s%3AlMmmGHNG3L_wZ83-3iO9ihmEJQj3MyLD.fuSV6k2DS8q0jbnvDpdyMqrblQnWxQNsDgewxhxanzg' }
+req.query {}
+undefined
+res.locals.timesAccessed undefined
+req.session.timesAccessed 1
+cookies connect.sid=s%3AlMmmGHNG3L_wZ83-3iO9ihmEJQj3MyLD.fuSV6k2DS8q0jbnvDpdyMqrblQnWxQNsDgewxhxanzg
+req.headers { host: 'localhost:3000',
+  connection: 'keep-alive',
+  'cache-control': 'max-age=0',
+  'upgrade-insecure-requests': '1',
+  'user-agent':
+   'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36',
+  'sec-fetch-mode': 'navigate',
+  'sec-fetch-user': '?1',
+  accept:
+   'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'sec-fetch-site': 'cross-site',
+  'accept-encoding': 'gzip, deflate, br',
+  'accept-language': 'en-US,en;q=0.9,ko;q=0.8',
+  cookie:
+   'connect.sid=s%3AlMmmGHNG3L_wZ83-3iO9ihmEJQj3MyLD.fuSV6k2DS8q0jbnvDpdyMqrblQnWxQNsDgewxhxanzg' }
+^C
+(base) Juniperui-MacBook-Pro:src junipersohn$ NODE_ENV=PRODUCTION node app.js
+connecting to mongoose mongodb://student:secret@localhost:27017/hw05
+server started!
+Warning: no saslprep library specified. Passwords will not be sanitized
+db connected!
+req.query {}
+undefined
+res.locals.timesAccessed undefined
+req.session.timesAccessed 1
+cookies connect.sid=s%3AlMmmGHNG3L_wZ83-3iO9ihmEJQj3MyLD.fuSV6k2DS8q0jbnvDpdyMqrblQnWxQNsDgewxhxanzg
+req.headers { host: 'localhost:3000',
+  connection: 'keep-alive',
+  'cache-control': 'max-age=0',
+  'upgrade-insecure-requests': '1',
+  'user-agent':
+   'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36',
+  'sec-fetch-mode': 'navigate',
+  'sec-fetch-user': '?1',
+  accept:
+   'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'sec-fetch-site': 'cross-site',
+  'accept-encoding': 'gzip, deflate, br',
+  'accept-language': 'en-US,en;q=0.9,ko;q=0.8',
+  cookie:
+   'connect.sid=s%3AlMmmGHNG3L_wZ83-3iO9ihmEJQj3MyLD.fuSV6k2DS8q0jbnvDpdyMqrblQnWxQNsDgewxhxanzg' }
+{}
+req.query {}
+undefined
+res.locals.timesAccessed undefined
+req.session.timesAccessed 2
+cookies connect.sid=s%3A3WNsikn6K3aBxklg2oOR-4BdRz5fiGOH.Svv%2B6vreJWaBf8pioNBki5VWzqo%2BibC5Fs7nN3nAyhA
+req.headers { host: 'localhost:3000',
+  connection: 'keep-alive',
+  'upgrade-insecure-requests': '1',
+  'user-agent':
+   'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36',
+  'sec-fetch-mode': 'navigate',
+  'sec-fetch-user': '?1',
+  accept:
+   'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'sec-fetch-site': 'same-origin',
+  referer: 'http://localhost:3000/',
+  'accept-encoding': 'gzip, deflate, br',
+  'accept-language': 'en-US,en;q=0.9,ko;q=0.8',
+  cookie:
+   'connect.sid=s%3A3WNsikn6K3aBxklg2oOR-4BdRz5fiGOH.Svv%2B6vreJWaBf8pioNBki5VWzqo%2BibC5Fs7nN3nAyhA',
+  'if-none-match': 'W/"552-24zmdiG+KbhR03yRDgrNPmVjHa8"' }
+^C
+(base) Juniperui-MacBook-Pro:src junipersohn$ NODE_ENV=PRODUCTION node app.js
+connecting to mongoose mongodb://student:secret@localhost:27017/hw05
+server started!
+Warning: no saslprep library specified. Passwords will not be sanitized
+db connected!
+req.query {}
+undefined
+res.locals.timesAccessed undefined
+req.session.timesAccessed 1
+cookies connect.sid=s%3A3WNsikn6K3aBxklg2oOR-4BdRz5fiGOH.Svv%2B6vreJWaBf8pioNBki5VWzqo%2BibC5Fs7nN3nAyhA
+req.headers { host: 'localhost:3000',
+  connection: 'keep-alive',
+  'cache-control': 'max-age=0',
+  'upgrade-insecure-requests': '1',
+  'user-agent':
+   'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36',
+  'sec-fetch-mode': 'navigate',
+  'sec-fetch-user': '?1',
+  accept:
+   'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'sec-fetch-site': 'same-origin',
+  referer: 'http://localhost:3000/',
+  'accept-encoding': 'gzip, deflate, br',
+  'accept-language': 'en-US,en;q=0.9,ko;q=0.8',
+  cookie:
+   'connect.sid=s%3A3WNsikn6K3aBxklg2oOR-4BdRz5fiGOH.Svv%2B6vreJWaBf8pioNBki5VWzqo%2BibC5Fs7nN3nAyhA',
+  'if-none-match': 'W/"551-AHVUVFlyxzb+C4lI1li9g8mrQOQ"' }
+req.query {}
+undefined
+res.locals.timesAccessed undefined
+req.session.timesAccessed 2
+cookies connect.sid=s%3AC_I8jskWD0LPS9a0hoWQ7Eu0k24ybZwU.%2FqYKLOuMp0gyUIJMd3f1xR0TPplgs7rP69eZucJPkkA
+req.headers { host: 'localhost:3000',
+  connection: 'keep-alive',
+  'upgrade-insecure-requests': '1',
+  'user-agent':
+   'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36',
+  'sec-fetch-mode': 'navigate',
+  'sec-fetch-user': '?1',
+  accept:
+   'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'sec-fetch-site': 'same-origin',
+  referer: 'http://localhost:3000/reviews/add',
+  'accept-encoding': 'gzip, deflate, br',
+  'accept-language': 'en-US,en;q=0.9,ko;q=0.8',
+  cookie:
+   'connect.sid=s%3AC_I8jskWD0LPS9a0hoWQ7Eu0k24ybZwU.%2FqYKLOuMp0gyUIJMd3f1xR0TPplgs7rP69eZucJPkkA',
+  'if-none-match': 'W/"908-Ju+WLjHyORkYLoBVcDUcRehLvEo"' }
+{}
+req.query {}
+undefined
+res.locals.timesAccessed undefined
+req.session.timesAccessed 3
+cookies connect.sid=s%3AC_I8jskWD0LPS9a0hoWQ7Eu0k24ybZwU.%2FqYKLOuMp0gyUIJMd3f1xR0TPplgs7rP69eZucJPkkA
+req.headers { host: 'localhost:3000',
+  connection: 'keep-alive',
+  'upgrade-insecure-requests': '1',
+  'user-agent':
+   'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36',
+  'sec-fetch-mode': 'navigate',
+  'sec-fetch-user': '?1',
+  accept:
+   'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'sec-fetch-site': 'same-origin',
+  referer: 'http://localhost:3000/',
+  'accept-encoding': 'gzip, deflate, br',
+  'accept-language': 'en-US,en;q=0.9,ko;q=0.8',
+  cookie:
+   'connect.sid=s%3AC_I8jskWD0LPS9a0hoWQ7Eu0k24ybZwU.%2FqYKLOuMp0gyUIJMd3f1xR0TPplgs7rP69eZucJPkkA',
+  'if-none-match': 'W/"551-AHVUVFlyxzb+C4lI1li9g8mrQOQ"' }
+req.query {}
+undefined
+res.locals.timesAccessed undefined
+req.session.timesAccessed 4
+cookies connect.sid=s%3AC_I8jskWD0LPS9a0hoWQ7Eu0k24ybZwU.%2FqYKLOuMp0gyUIJMd3f1xR0TPplgs7rP69eZucJPkkA
+req.headers { host: 'localhost:3000',
+  connection: 'keep-alive',
+  'content-length': '82',
+  'cache-control': 'max-age=0',
+  origin: 'http://localhost:3000',
+  'upgrade-insecure-requests': '1',
+  'content-type': 'application/x-www-form-urlencoded',
+  'user-agent':
+   'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36',
+  'sec-fetch-mode': 'navigate',
+  'sec-fetch-user': '?1',
+  accept:
+   'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'sec-fetch-site': 'same-origin',
+  referer: 'http://localhost:3000/reviews/add',
+  'accept-encoding': 'gzip, deflate, br',
+  'accept-language': 'en-US,en;q=0.9,ko;q=0.8',
+  cookie:
+   'connect.sid=s%3AC_I8jskWD0LPS9a0hoWQ7Eu0k24ybZwU.%2FqYKLOuMp0gyUIJMd3f1xR0TPplgs7rP69eZucJPkkA' }
+req.query {}
+undefined
+res.locals.timesAccessed undefined
+req.session.timesAccessed 5
+cookies connect.sid=s%3AC_I8jskWD0LPS9a0hoWQ7Eu0k24ybZwU.%2FqYKLOuMp0gyUIJMd3f1xR0TPplgs7rP69eZucJPkkA
+req.headers { host: 'localhost:3000',
+  connection: 'keep-alive',
+  'cache-control': 'max-age=0',
+  'upgrade-insecure-requests': '1',
+  'user-agent':
+   'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36',
+  'sec-fetch-mode': 'navigate',
+  'sec-fetch-user': '?1',
+  accept:
+   'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'sec-fetch-site': 'same-origin',
+  referer: 'http://localhost:3000/reviews/add',
+  'accept-encoding': 'gzip, deflate, br',
+  'accept-language': 'en-US,en;q=0.9,ko;q=0.8',
+  cookie:
+   'connect.sid=s%3AC_I8jskWD0LPS9a0hoWQ7Eu0k24ybZwU.%2FqYKLOuMp0gyUIJMd3f1xR0TPplgs7rP69eZucJPkkA',
+  'if-none-match': 'W/"908-mVLTcw3r3FxKlgz/n7iXtoKnyCE"' }
+{}
+req.query {}
+undefined
+res.locals.timesAccessed undefined
+req.session.timesAccessed 6
+cookies connect.sid=s%3AC_I8jskWD0LPS9a0hoWQ7Eu0k24ybZwU.%2FqYKLOuMp0gyUIJMd3f1xR0TPplgs7rP69eZucJPkkA
+req.headers { host: 'localhost:3000',
+  connection: 'keep-alive',
+  'upgrade-insecure-requests': '1',
+  'user-agent':
+   'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36',
+  'sec-fetch-mode': 'navigate',
+  'sec-fetch-user': '?1',
+  accept:
+   'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'sec-fetch-site': 'same-origin',
+  referer: 'http://localhost:3000/',
+  'accept-encoding': 'gzip, deflate, br',
+  'accept-language': 'en-US,en;q=0.9,ko;q=0.8',
+  cookie:
+   'connect.sid=s%3AC_I8jskWD0LPS9a0hoWQ7Eu0k24ybZwU.%2FqYKLOuMp0gyUIJMd3f1xR0TPplgs7rP69eZucJPkkA' }
+Error: Failed to lookup view "mine" in views directory "/Users/junipersohn/AIT/Juniperrr-homework05/src/views"
+    at Function.render (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/application.js:580:17)
+    at ServerResponse.render (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/response.js:1012:7)
+    at app.get (/Users/junipersohn/AIT/Juniperrr-homework05/src/app.js:96:9)
+    at Layer.handle [as handle_request] (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:275:10)
+    at app.use (/Users/junipersohn/AIT/Juniperrr-homework05/src/app.js:53:5)
+    at Layer.handle [as handle_request] (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:317:13)
+    at /Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/junipersohn/AIT/Juniperrr-homework05/node_modules/express/lib/router/index.js:275:10)
+^C
+(base) Juniperui-MacBook-Pro:src junipersohn$ NODE_ENV=PRODUCTION node app.js
+connecting to mongoose mongodb://student:secret@localhost:27017/hw05
+server started!
+Warning: no saslprep library specified. Passwords will not be sanitized
+db connected!
+req.query {}
+undefined
+res.locals.timesAccessed undefined
+req.session.timesAccessed 1
+cookies connect.sid=s%3AC_I8jskWD0LPS9a0hoWQ7Eu0k24ybZwU.%2FqYKLOuMp0gyUIJMd3f1xR0TPplgs7rP69eZucJPkkA
+req.headers { host: 'localhost:3000',
+  connection: 'keep-alive',
+  'upgrade-insecure-requests': '1',
+  'user-agent':
+   'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36',
+  'sec-fetch-mode': 'navigate',
+  'sec-fetch-user': '?1',
+  accept:
+   'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  purpose: 'prefetch',
+  'sec-fetch-site': 'none',
+  'accept-encoding': 'gzip, deflate, br',
+  'accept-language': 'en-US,en;q=0.9,ko;q=0.8',
+  cookie:
+   'connect.sid=s%3AC_I8jskWD0LPS9a0hoWQ7Eu0k24ybZwU.%2FqYKLOuMp0gyUIJMd3f1xR0TPplgs7rP69eZucJPkkA',
+  'if-none-match': 'W/"970-DDGeUqlMs5b99bqpkjyyrkScg58"' }
+{}
+req.query {}
+undefined
+res.locals.timesAccessed undefined
+req.session.timesAccessed 2
+cookies connect.sid=s%3ARjBtgOlLV28p7l2xkTzaVfAT0ouZG-Ig.r2camkgJr7B0%2F%2BavfBKxMJTsM%2FeqV2tTUHnUSORvntM
+req.headers { host: 'localhost:3000',
+  connection: 'keep-alive',
+  'upgrade-insecure-requests': '1',
+  'user-agent':
+   'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36',
+  'sec-fetch-mode': 'navigate',
+  'sec-fetch-user': '?1',
+  accept:
+   'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'sec-fetch-site': 'same-origin',
+  referer: 'http://localhost:3000/',
+  'accept-encoding': 'gzip, deflate, br',
+  'accept-language': 'en-US,en;q=0.9,ko;q=0.8',
+  cookie:
+   'connect.sid=s%3ARjBtgOlLV28p7l2xkTzaVfAT0ouZG-Ig.r2camkgJr7B0%2F%2BavfBKxMJTsM%2FeqV2tTUHnUSORvntM' }
+^C
+(base) Juniperui-MacBook-Pro:src junipersohn$ NODE_ENV=PRODUCTION node app.js
+connecting to mongoose mongodb://student:secret@localhost:27017/hw05
+server started!
+Warning: no saslprep library specified. Passwords will not be sanitized
+db connected!
+req.query {}
+undefined
+res.locals.timesAccessed undefined
+req.session.timesAccessed 1
+cookies connect.sid=s%3ARjBtgOlLV28p7l2xkTzaVfAT0ouZG-Ig.r2camkgJr7B0%2F%2BavfBKxMJTsM%2FeqV2tTUHnUSORvntM
+req.headers { host: 'localhost:3000',
+  connection: 'keep-alive',
+  'upgrade-insecure-requests': '1',
+  'user-agent':
+   'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36',
+  'sec-fetch-mode': 'navigate',
+  'sec-fetch-user': '?1',
+  accept:
+   'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'sec-fetch-site': 'same-origin',
+  referer: 'http://localhost:3000/reviews/mine',
+  'accept-encoding': 'gzip, deflate, br',
+  'accept-language': 'en-US,en;q=0.9,ko;q=0.8',
+  cookie:
+   'connect.sid=s%3ARjBtgOlLV28p7l2xkTzaVfAT0ouZG-Ig.r2camkgJr7B0%2F%2BavfBKxMJTsM%2FeqV2tTUHnUSORvntM',
+  'if-none-match': 'W/"970-lfQSk6fCOeeya/JQ1pW7o+e6MR8"' }
+{}
+req.query {}
+undefined
+res.locals.timesAccessed undefined
+req.session.timesAccessed 2
+cookies connect.sid=s%3AnTPTHR5hjuhQR26A7e9LG8ZCkjnGZl1F.lSJEqdlXx%2BB6muccft4to4uT%2BfWp8%2FlbX7vjoHDkXGk
+req.headers { host: 'localhost:3000',
+  connection: 'keep-alive',
+  'upgrade-insecure-requests': '1',
+  'user-agent':
+   'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36',
+  'sec-fetch-mode': 'navigate',
+  'sec-fetch-user': '?1',
+  accept:
+   'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'sec-fetch-site': 'same-origin',
+  referer: 'http://localhost:3000/',
+  'accept-encoding': 'gzip, deflate, br',
+  'accept-language': 'en-US,en;q=0.9,ko;q=0.8',
+  cookie:
+   'connect.sid=s%3AnTPTHR5hjuhQR26A7e9LG8ZCkjnGZl1F.lSJEqdlXx%2BB6muccft4to4uT%2BfWp8%2FlbX7vjoHDkXGk' }
+req.query {}
+undefined
+res.locals.timesAccessed undefined
+req.session.timesAccessed 3
+cookies connect.sid=s%3AnTPTHR5hjuhQR26A7e9LG8ZCkjnGZl1F.lSJEqdlXx%2BB6muccft4to4uT%2BfWp8%2FlbX7vjoHDkXGk
+req.headers { host: 'localhost:3000',
+  connection: 'keep-alive',
+  'upgrade-insecure-requests': '1',
+  'user-agent':
+   'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36',
+  'sec-fetch-mode': 'navigate',
+  'sec-fetch-user': '?1',
+  accept:
+   'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'sec-fetch-site': 'same-origin',
+  referer: 'http://localhost:3000/reviews/add',
+  'accept-encoding': 'gzip, deflate, br',
+  'accept-language': 'en-US,en;q=0.9,ko;q=0.8',
+  cookie:
+   'connect.sid=s%3AnTPTHR5hjuhQR26A7e9LG8ZCkjnGZl1F.lSJEqdlXx%2BB6muccft4to4uT%2BfWp8%2FlbX7vjoHDkXGk',
+  'if-none-match': 'W/"409-jAaqaMsZi2q3AXZyP6j1YeEszc4"' }
+req.query {}
+undefined
+res.locals.timesAccessed undefined
+req.session.timesAccessed 4
+cookies connect.sid=s%3AnTPTHR5hjuhQR26A7e9LG8ZCkjnGZl1F.lSJEqdlXx%2BB6muccft4to4uT%2BfWp8%2FlbX7vjoHDkXGk
+req.headers { host: 'localhost:3000',
+  connection: 'keep-alive',
+  'upgrade-insecure-requests': '1',
+  'user-agent':
+   'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36',
+  'sec-fetch-mode': 'navigate',
+  'sec-fetch-user': '?1',
+  accept:
+   'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'sec-fetch-site': 'same-origin',
+  referer: 'http://localhost:3000/reviews/mine',
+  'accept-encoding': 'gzip, deflate, br',
+  'accept-language': 'en-US,en;q=0.9,ko;q=0.8',
+  cookie:
+   'connect.sid=s%3AnTPTHR5hjuhQR26A7e9LG8ZCkjnGZl1F.lSJEqdlXx%2BB6muccft4to4uT%2BfWp8%2FlbX7vjoHDkXGk',
+  'if-none-match': 'W/"551-AHVUVFlyxzb+C4lI1li9g8mrQOQ"' }
+req.query {}
+undefined
+res.locals.timesAccessed undefined
+req.session.timesAccessed 5
+cookies connect.sid=s%3AnTPTHR5hjuhQR26A7e9LG8ZCkjnGZl1F.lSJEqdlXx%2BB6muccft4to4uT%2BfWp8%2FlbX7vjoHDkXGk
+req.headers { host: 'localhost:3000',
+  connection: 'keep-alive',
+  'content-length': '85',
+  'cache-control': 'max-age=0',
+  origin: 'http://localhost:3000',
+  'upgrade-insecure-requests': '1',
+  'content-type': 'application/x-www-form-urlencoded',
+  'user-agent':
+   'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36',
+  'sec-fetch-mode': 'navigate',
+  'sec-fetch-user': '?1',
+  accept:
+   'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'sec-fetch-site': 'same-origin',
+  referer: 'http://localhost:3000/reviews/add',
+  'accept-encoding': 'gzip, deflate, br',
+  'accept-language': 'en-US,en;q=0.9,ko;q=0.8',
+  cookie:
+   'connect.sid=s%3AnTPTHR5hjuhQR26A7e9LG8ZCkjnGZl1F.lSJEqdlXx%2BB6muccft4to4uT%2BfWp8%2FlbX7vjoHDkXGk' }
+req.query {}
+undefined
+res.locals.timesAccessed undefined
+req.session.timesAccessed 6
+cookies connect.sid=s%3AnTPTHR5hjuhQR26A7e9LG8ZCkjnGZl1F.lSJEqdlXx%2BB6muccft4to4uT%2BfWp8%2FlbX7vjoHDkXGk
+req.headers { host: 'localhost:3000',
+  connection: 'keep-alive',
+  'cache-control': 'max-age=0',
+  'upgrade-insecure-requests': '1',
+  'user-agent':
+   'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36',
+  'sec-fetch-mode': 'navigate',
+  'sec-fetch-user': '?1',
+  accept:
+   'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'sec-fetch-site': 'same-origin',
+  referer: 'http://localhost:3000/reviews/add',
+  'accept-encoding': 'gzip, deflate, br',
+  'accept-language': 'en-US,en;q=0.9,ko;q=0.8',
+  cookie:
+   'connect.sid=s%3AnTPTHR5hjuhQR26A7e9LG8ZCkjnGZl1F.lSJEqdlXx%2BB6muccft4to4uT%2BfWp8%2FlbX7vjoHDkXGk',
+  'if-none-match': 'W/"970-lfQSk6fCOeeya/JQ1pW7o+e6MR8"' }
+{}
+req.query {}
+undefined
+res.locals.timesAccessed undefined
+req.session.timesAccessed 7
+cookies connect.sid=s%3AnTPTHR5hjuhQR26A7e9LG8ZCkjnGZl1F.lSJEqdlXx%2BB6muccft4to4uT%2BfWp8%2FlbX7vjoHDkXGk
+req.headers { host: 'localhost:3000',
+  connection: 'keep-alive',
+  'upgrade-insecure-requests': '1',
+  'user-agent':
+   'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36',
+  'sec-fetch-mode': 'navigate',
+  'sec-fetch-user': '?1',
+  accept:
+   'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'sec-fetch-site': 'same-origin',
+  referer: 'http://localhost:3000/',
+  'accept-encoding': 'gzip, deflate, br',
+  'accept-language': 'en-US,en;q=0.9,ko;q=0.8',
+  cookie:
+   'connect.sid=s%3AnTPTHR5hjuhQR26A7e9LG8ZCkjnGZl1F.lSJEqdlXx%2BB6muccft4to4uT%2BfWp8%2FlbX7vjoHDkXGk',
+  'if-none-match': 'W/"409-uJhLisscW0b2BVlrF5xL40N0gJw"' }
+^C
+(base) Juniperui-MacBook-Pro:src junipersohn$ NODE_ENV=PRODUCTION node app.js
+connecting to mongoose mongodb://student:secret@localhost:27017/hw05
+server started!
+Warning: no saslprep library specified. Passwords will not be sanitized
+db connected!
+req.query {}
+undefined
+res.locals.timesAccessed undefined
+req.session.timesAccessed 1
+cookies connect.sid=s%3AnTPTHR5hjuhQR26A7e9LG8ZCkjnGZl1F.lSJEqdlXx%2BB6muccft4to4uT%2BfWp8%2FlbX7vjoHDkXGk
+req.headers { host: 'localhost:3000',
+  connection: 'keep-alive',
+  'cache-control': 'max-age=0',
+  'upgrade-insecure-requests': '1',
+  'user-agent':
+   'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36',
+  'sec-fetch-mode': 'navigate',
+  'sec-fetch-user': '?1',
+  accept:
+   'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'sec-fetch-site': 'same-origin',
+  referer: 'http://localhost:3000/',
+  'accept-encoding': 'gzip, deflate, br',
+  'accept-language': 'en-US,en;q=0.9,ko;q=0.8',
+  cookie:
+   'connect.sid=s%3AnTPTHR5hjuhQR26A7e9LG8ZCkjnGZl1F.lSJEqdlXx%2BB6muccft4to4uT%2BfWp8%2FlbX7vjoHDkXGk',
+  'if-none-match': 'W/"474-y0aZvlQF4oFNl21s81N2klYlQ58"' }
+req.query {}
+undefined
+res.locals.timesAccessed undefined
+req.session.timesAccessed 2
+cookies connect.sid=s%3ABVSeI3NWSgU_e1McRTSkyvctvaenAzau.cmQKmbJ%2FG7wmpJLTWAvjyKd%2F25JexgMC4Gahy1T2Xrc
+req.headers { host: 'localhost:3000',
+  connection: 'keep-alive',
+  'upgrade-insecure-requests': '1',
+  'user-agent':
+   'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36',
+  'sec-fetch-mode': 'navigate',
+  'sec-fetch-user': '?1',
+  accept:
+   'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'sec-fetch-site': 'same-origin',
+  referer: 'http://localhost:3000/reviews/mine',
+  'accept-encoding': 'gzip, deflate, br',
+  'accept-language': 'en-US,en;q=0.9,ko;q=0.8',
+  cookie:
+   'connect.sid=s%3ABVSeI3NWSgU_e1McRTSkyvctvaenAzau.cmQKmbJ%2FG7wmpJLTWAvjyKd%2F25JexgMC4Gahy1T2Xrc',
+  'if-none-match': 'W/"9db-zo9iGRyRMSkwdkSO7cCDdT6gXsA"' }
+{}
+req.query {}
+undefined
+res.locals.timesAccessed undefined
+req.session.timesAccessed 3
+cookies connect.sid=s%3ABVSeI3NWSgU_e1McRTSkyvctvaenAzau.cmQKmbJ%2FG7wmpJLTWAvjyKd%2F25JexgMC4Gahy1T2Xrc
+req.headers { host: 'localhost:3000',
+  connection: 'keep-alive',
+  'upgrade-insecure-requests': '1',
+  'user-agent':
+   'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36',
+  'sec-fetch-mode': 'navigate',
+  'sec-fetch-user': '?1',
+  accept:
+   'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'sec-fetch-site': 'same-origin',
+  referer: 'http://localhost:3000/',
+  'accept-encoding': 'gzip, deflate, br',
+  'accept-language': 'en-US,en;q=0.9,ko;q=0.8',
+  cookie:
+   'connect.sid=s%3ABVSeI3NWSgU_e1McRTSkyvctvaenAzau.cmQKmbJ%2FG7wmpJLTWAvjyKd%2F25JexgMC4Gahy1T2Xrc' }
+req.query {}
+undefined
+res.locals.timesAccessed undefined
+req.session.timesAccessed 4
+cookies connect.sid=s%3ABVSeI3NWSgU_e1McRTSkyvctvaenAzau.cmQKmbJ%2FG7wmpJLTWAvjyKd%2F25JexgMC4Gahy1T2Xrc
+req.headers { host: 'localhost:3000',
+  connection: 'keep-alive',
+  'content-length': '84',
+  'cache-control': 'max-age=0',
+  origin: 'http://localhost:3000',
+  'upgrade-insecure-requests': '1',
+  'content-type': 'application/x-www-form-urlencoded',
+  'user-agent':
+   'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36',
+  'sec-fetch-mode': 'navigate',
+  'sec-fetch-user': '?1',
+  accept:
+   'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'sec-fetch-site': 'same-origin',
+  referer: 'http://localhost:3000/reviews/add',
+  'accept-encoding': 'gzip, deflate, br',
+  'accept-language': 'en-US,en;q=0.9,ko;q=0.8',
+  cookie:
+   'connect.sid=s%3ABVSeI3NWSgU_e1McRTSkyvctvaenAzau.cmQKmbJ%2FG7wmpJLTWAvjyKd%2F25JexgMC4Gahy1T2Xrc' }
+req.query {}
+undefined
+res.locals.timesAccessed undefined
+req.session.timesAccessed 5
+cookies connect.sid=s%3ABVSeI3NWSgU_e1McRTSkyvctvaenAzau.cmQKmbJ%2FG7wmpJLTWAvjyKd%2F25JexgMC4Gahy1T2Xrc
+req.headers { host: 'localhost:3000',
+  connection: 'keep-alive',
+  'cache-control': 'max-age=0',
+  'upgrade-insecure-requests': '1',
+  'user-agent':
+   'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36',
+  'sec-fetch-mode': 'navigate',
+  'sec-fetch-user': '?1',
+  accept:
+   'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'sec-fetch-site': 'same-origin',
+  referer: 'http://localhost:3000/reviews/add',
+  'accept-encoding': 'gzip, deflate, br',
+  'accept-language': 'en-US,en;q=0.9,ko;q=0.8',
+  cookie:
+   'connect.sid=s%3ABVSeI3NWSgU_e1McRTSkyvctvaenAzau.cmQKmbJ%2FG7wmpJLTWAvjyKd%2F25JexgMC4Gahy1T2Xrc',
+  'if-none-match': 'W/"9db-GyAhFyJ0f0EBrprh3WkWmGG+XXU"' }
+{}
+req.query {}
+undefined
+res.locals.timesAccessed undefined
+req.session.timesAccessed 6
+cookies connect.sid=s%3ABVSeI3NWSgU_e1McRTSkyvctvaenAzau.cmQKmbJ%2FG7wmpJLTWAvjyKd%2F25JexgMC4Gahy1T2Xrc
+req.headers { host: 'localhost:3000',
+  connection: 'keep-alive',
+  'upgrade-insecure-requests': '1',
+  'user-agent':
+   'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36',
+  'sec-fetch-mode': 'navigate',
+  'sec-fetch-user': '?1',
+  accept:
+   'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'sec-fetch-site': 'same-origin',
+  referer: 'http://localhost:3000/',
+  'accept-encoding': 'gzip, deflate, br',
+  'accept-language': 'en-US,en;q=0.9,ko;q=0.8',
+  cookie:
+   'connect.sid=s%3ABVSeI3NWSgU_e1McRTSkyvctvaenAzau.cmQKmbJ%2FG7wmpJLTWAvjyKd%2F25JexgMC4Gahy1T2Xrc',
+  'if-none-match': 'W/"409-hck63BV2PtOLhBTdRpdIXpdmDJo"' }
+
