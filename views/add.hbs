@@ -1,0 +1,35 @@
+<h2>Let's add a snippet!</h2>
+<form action="" method="POST">
+    <div class="addSnippet">
+        <div>
+            <label for="name">Name:</label>
+        </div>
+        <div>
+            <input type="text" name="name" placeholder="add name" id="name">
+        </div>
+    </div>
+
+    <div class="addSnippet">
+        <div>
+            <label for="code">Code:</label>
+        </div>
+        <div>
+            <textarea type="text" name="code" placeholder="add a snippet"></textarea>
+        </div>
+    </div>
+
+    <div class="addSnippet">
+        <div>
+            <label for="tag">Tag:</label>
+        </div>
+        <div>
+            <input type="text" name="tag" placeholder="add a tag">
+        </div>
+    </div>
+
+    <div class="addSnippet">
+        {{!-- <label for="name">Name:</label> --}}
+        <input type="submit" value="Add Snippet">
+    </div>
+</form>
+{{!-- urlencoded data = form data --}}

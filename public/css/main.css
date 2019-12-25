@@ -1,0 +1,73 @@
+/* main.css */
+#logo {
+    width: 50px;
+    height: 50px;
+}
+h1 {
+    font-size: 50px;
+    color:#494949;
+}
+h2 {
+    text-align: center;
+    font-size: 35px;
+    color:#494949;
+    padding: 10px 0px 0px 0px;
+}
+a{
+    border: 1px solid #494949;
+    padding: 3px 7px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.snippet {
+    padding-top: 30px;
+}
+
+.code {
+    background-color: #494949;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.tags-list {
+    padding-left: 0;
+}
+
+.tags-list li {
+    list-style-type: none;
+    float: left;
+    margin-right: 10px;
+}
+
+.tag-label {
+    padding-top: 5px;
+}
+
+.tag-item {
+    border: 2px solid #494949;
+    border-radius: 5px;
+    padding: 3px 100px;
+}
+
+.addSnippet {
+    text-align: center;
+    padding: 10px;
+}
+.searchSnippet {
+    text-align: center;
+    padding: 10px;
+}
+
+/* .addInput {
+    position: fixed;    
+    left: 50%; 
+    transform: translateX(-50%);
+} */
